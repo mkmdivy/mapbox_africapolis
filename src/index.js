@@ -73,31 +73,41 @@ class Application extends React.Component {
     });
     });
 
-    map.on('load', function() {
-      // Add a circle layer with a vector source.
-      map.addLayer({
-        id: 'points-of-interest',
-        source: {
-          type: 'vector',
-          url: 'mapbox://mkmd.ck5qy6ole1xja2npflwvfk78l-2j015'
-        },
-        'source-layer': 'metropole',
-        type: 'circle',
-        paint: {
-          // Mapbox Style Specification paint properties
-        },
-        layout: {
-          // Mapbox Style Specification layout properties
-        }
-      });
 
-    });
+
+    // /////// ******Add Africapolis
+    // map.on('load', function() {
+    //   // Add a circle layer with a vector source.
+    //   map.addLayer({
+    //     id: 'points-of-interest',
+    //     source: {
+    //       type: 'vector',
+    //       url: 'mapbox://mkmd.ck5qy6ole1xja2npflwvfk78l-2j015'
+    //     },
+    //     'source-layer': 'metropole',
+    //     type: 'circle',
+    //     paint: {
+    //       // Mapbox Style Specification paint properties
+    //     },
+    //     layout: {
+    //       // Mapbox Style Specification layout properties
+    //     }
+    //   });
+    //
+    // });
+
     //axios.get('chad.json').then(response=>{console.log(response.data.Agglomerations[0].Longlat)})
     //mkmd.ck5qy6ole1xja2npflwvfk78l-2j015
     async function makeGetRequest(country,select) {
       let covid = await axios.get('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
       //console.log(covid.data)
-      csv2geojson.csv2geojson(covid.data,function(err,data){let covid_array=data
+      csv2geojson.csv2geojson(covid.data,{
+    latfield: 'Lat',
+    lonfield: 'Long',
+    delimiter: ',',
+    numericFields:'4/7/20'
+},
+function(err,data){let covid_array=data
       console.log(covid_array)
       map.addSource('covid', {
         type: 'geojson',
@@ -107,7 +117,26 @@ class Application extends React.Component {
       'id': 'covid',
       'type': 'circle',
       'source': 'covid',
+      'filter': ['>', '4/7/20',"0"],
       'paint': {
+        'circle-color': [
+      'step',
+      ['get', '4/7/20'],
+      '#51bbd6',
+      100,
+      '#f1f075',
+      750,
+      '#f28cb1'
+      ],
+        'circle-radius': [
+      'step',
+      ['get', '4/7/20'],
+      20,
+      100,
+      30,
+      750,
+      40
+      ]
       //'fill-color': 'rgba(200, 100, 240, 0.4)',
       //'fill-outline-color': 'rgba(200, 100, 240, 1)'
       }
@@ -123,11 +152,11 @@ class Application extends React.Component {
       //}
 
 
-      let res = await axios.get(country+'.json');
+      //let res = await axios.get(country+'.json');
       //console.log(res.data.Agglomerations);
-      let data = res.data.Agglomerations[select].Longlat;
+      //let data = res.data.Agglomerations[select].Longlat;
 
-      new mapboxgl.Marker().setLngLat(data).addTo(map);
+      //new mapboxgl.Marker().setLngLat(data).addTo(map);
       //marker.setLngLat(data)
       //marker.addTo(map);
     }
