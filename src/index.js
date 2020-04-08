@@ -25,6 +25,8 @@ class Application extends React.Component {
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom
     });
+
+
     map.on('move', () => {
     this.setState({
     lng: map.getCenter().lng.toFixed(4),
@@ -33,45 +35,45 @@ class Application extends React.Component {
     });
     });
 
-    map.on('load', function() {
-    // Add a source for the state polygons.
-    map.addSource('states', {
-    'type': 'geojson',
-    'data':
-    'https://gist.githubusercontent.com/mkmdivy/044d7f9f13cc2ec22ba6b1751c3527a6/raw/9908322b5ac7915720fc98190f755f139bde8ff3/africa'
-    });
-
-    // Add a layer showing the state polygons.
-    map.addLayer({
-    'id': 'NAME_EN',
-    'type': 'fill',
-    'source': 'states',
-    'paint': {
-    'fill-color': 'rgba(200, 100, 240, 0.4)',
-    'fill-outline-color': 'rgba(200, 100, 240, 1)'
-    }
-    });
-
-    // When a click event occurs on a feature in the states layer, open a popup at the
-    // location of the click, with description HTML from its properties.
-    map.on('click', 'NAME_EN', function(e) {
-    new mapboxgl.Popup()
-    .setLngLat(e.lngLat)
-    .setHTML(e.features[0].properties.NAME_EN)
-    .addTo(map);
-    makeGetRequest(e.features[0].properties.NAME_EN,1)
-    });
-
-    // Change the cursor to a pointer when the mouse is over the states layer.
-    map.on('mouseenter', 'NAME_EN', function() {
-    map.getCanvas().style.cursor = 'pointer';
-    });
-
-    // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'NAME_EN', function() {
-    map.getCanvas().style.cursor = '';
-    });
-    });
+    // map.on('load', function() {
+    // // Add a source for the state polygons.
+    // map.addSource('states', {
+    // 'type': 'geojson',
+    // 'data':
+    // 'https://gist.githubusercontent.com/mkmdivy/044d7f9f13cc2ec22ba6b1751c3527a6/raw/9908322b5ac7915720fc98190f755f139bde8ff3/africa'
+    // });
+    //
+    // // Add a layer showing the state polygons.
+    // map.addLayer({
+    // 'id': 'NAME_EN',
+    // 'type': 'fill',
+    // 'source': 'states',
+    // 'paint': {
+    // 'fill-color': 'rgba(200, 100, 240, 0.4)',
+    // 'fill-outline-color': 'rgba(200, 100, 240, 1)'
+    // }
+    // });
+    //
+    // // When a click event occurs on a feature in the states layer, open a popup at the
+    // // location of the click, with description HTML from its properties.
+    // map.on('click', 'NAME_EN', function(e) {
+    // new mapboxgl.Popup()
+    // .setLngLat(e.lngLat)
+    // .setHTML(e.features[0].properties.NAME_EN)
+    // .addTo(map);
+    // makeGetRequest(e.features[0].properties.NAME_EN,1)
+    // });
+    //
+    // // Change the cursor to a pointer when the mouse is over the states layer.
+    // map.on('mouseenter', 'NAME_EN', function() {
+    // map.getCanvas().style.cursor = 'pointer';
+    // });
+    //
+    // // Change it back to a pointer when it leaves.
+    // map.on('mouseleave', 'NAME_EN', function() {
+    // map.getCanvas().style.cursor = '';
+    // });
+    // });
 
 
 
@@ -98,17 +100,22 @@ class Application extends React.Component {
 
     //axios.get('chad.json').then(response=>{console.log(response.data.Agglomerations[0].Longlat)})
     //mkmd.ck5qy6ole1xja2npflwvfk78l-2j015
-    async function makeGetRequest(country,select) {
+      async function makeGetRequest() {
       let covid = await axios.get('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
       //console.log(covid.data)
+      let covid_name=papa.parse(covid.data,{header:true,skipEmptyLines:true}).data["0"];
+      let covid_latest=Object.keys(covid_name)[Object.keys(covid_name).length-1]
       csv2geojson.csv2geojson(covid.data,{
     latfield: 'Lat',
     lonfield: 'Long',
     delimiter: ',',
-    numericFields:'4/7/20'
+    numericFields:covid_latest
 },
-function(err,data){let covid_array=data
+function(err,data){
+  //let covid_latest=Object.keys(data.features[0].properties)[Object.keys(data.features[0].properties).length-1]
+      let covid_array=data
       console.log(covid_array)
+    map.on('load', function() {
       map.addSource('covid', {
         type: 'geojson',
         data: covid_array
@@ -117,33 +124,43 @@ function(err,data){let covid_array=data
       'id': 'covid',
       'type': 'circle',
       'source': 'covid',
-      'filter': ['>', '4/7/20',"0"],
+      filter: ['in', 'Country/Region',"Algeria","Angola","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde","Cameroon","Central African Republic","Chad","Cote d'Ivoire","Congo (Brazzaville)","Congo (Kinshasa)","Djibouti","Egypt","Equatorial Guinea","Ethiopia","Gabon","Gambia","Ghana","Guinea","Guinea-Bissau","Kenya","Liberia","Libya","Madagascar","Malawi","Mali","Morocco","Mozambique","Namibia","Niger","Nigeria","Rwanda","Sao Tome and Principe","Senegal","Sierra Leone","Somalia","South Africa","South Sudan","Sudan","Eswatini","Tanzania","Togo","Tunisia","Uganda","Western Sahara","Zambia","Zimbabwe"],
       'paint': {
         'circle-color': [
       'step',
-      ['get', '4/7/20'],
+      ['get', covid_latest],
       '#51bbd6',
-      100,
+      30,
       '#f1f075',
-      750,
+      100,
       '#f28cb1'
       ],
         'circle-radius': [
       'step',
-      ['get', '4/7/20'],
+      ['get', covid_latest],
       20,
       100,
       30,
       750,
       40
       ]
-      //'fill-color': 'rgba(200, 100, 240, 0.4)',
-      //'fill-outline-color': 'rgba(200, 100, 240, 1)'
+      }
+      });
+
+      map.addLayer({
+      id: 'covid-count',
+      type: 'symbol',
+      source: 'covid',
+      filter: ['in', 'Country/Region',"Algeria","Angola","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde","Cameroon","Central African Republic","Chad","Cote d'Ivoire","Congo (Brazzaville)","Congo (Kinshasa)","Djibouti","Egypt","Equatorial Guinea","Ethiopia","Gabon","Gambia","Ghana","Guinea","Guinea-Bissau","Kenya","Liberia","Libya","Madagascar","Malawi","Mali","Morocco","Mozambique","Namibia","Niger","Nigeria","Rwanda","Sao Tome and Principe","Senegal","Sierra Leone","Somalia","South Africa","South Sudan","Sudan","Eswatini","Tanzania","Togo","Tunisia","Uganda","Western Sahara","Zambia","Zimbabwe"],
+      layout: {
+      'text-field': "{"+covid_latest+"}",
+      'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+      'text-size': 12
       }
       });
         //new mapboxgl.Marker().setLngLat([covid_array[x].Long,covid_array[x].Lat]).addTo(map);
       });
-
+    });
 
       //let covid_array= papa.parse(covid.data,{header:true,skipEmptyLines:true}).data;
       //var x;
@@ -161,19 +178,15 @@ function(err,data){let covid_array=data
       //marker.addTo(map);
     }
 
-
+  makeGetRequest()
     //let agglos = axios.get('egypt.json');
     //console.log(agglos)
     //let data = agglos.data.Agglomerations[0].Longlat;
-
     //var marker = new mapboxgl.Marker();
-
-
-
-
   }
 
   render() {
+
     return (
       <div>
         <div ref={el => this.mapContainer = el} className="mapContainer" />
