@@ -35,6 +35,17 @@ class Application extends React.Component {
     });
     });
 
+    //.map(e => e.join(",")).join("\n")
+    let agglos = axios.get('senegal.json').then(response=>{
+      let result = response.data.Agglomerations["0"]
+      console.log(Object.entries(result).map(e=>e))
+
+
+  });
+    //console.log(agglos)
+    //let data = agglos.data.Agglomerations[0].Longlat;
+    //var marker = new mapboxgl.Marker();
+
     // map.on('load', function() {
     // // Add a source for the state polygons.
     // map.addSource('states', {
