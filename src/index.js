@@ -33,54 +33,54 @@ class Application extends React.Component {
     });
 
     map.on('move', () => {
-    this.setState({
-    lng: map.getCenter().lng.toFixed(4),
-    lat: map.getCenter().lat.toFixed(4),
-    zoom: map.getZoom().toFixed(2)
-    });
+      this.setState({
+      lng: map.getCenter().lng.toFixed(4),
+      lat: map.getCenter().lat.toFixed(4),
+      zoom: map.getZoom().toFixed(2)
+      });
     });
 //// Color setting
 
   var agglomeration_fill_color =[
-                           "step",
-                           ["get", "Population_2015"],
-                           "hsla(0, 0%, 8%, 0.5)",
-                           10000,
-                           "hsla(55, 30%, 93%, 0.5)",
-                           30000,
-                           "hsla(60, 100%, 90%, 0.5)",
-                           100000,
-                           "hsla(98, 55%, 81%, 0.5)",
-                           300000,
-                           "hsla(166, 44%, 65%, 0.5)",
-                           1000000,
-                           "hsla(186, 53%, 51%, 0.5)",
-                           2000000,
-                           "hsla(197, 74%, 43%, 0.5)",
-                           11847635,
-                           "hsla(197, 74%, 43%, 0.5)"
-                          ]
+   "step",
+   ["get", "Population_2015"],
+   "hsla(0, 0%, 8%, 0.5)",
+   10000,
+   "hsla(55, 30%, 93%, 0.5)",
+   30000,
+   "hsla(60, 100%, 90%, 0.5)",
+   100000,
+   "hsla(98, 55%, 81%, 0.5)",
+   300000,
+   "hsla(166, 44%, 65%, 0.5)",
+   1000000,
+   "hsla(186, 53%, 51%, 0.5)",
+   2000000,
+   "hsla(197, 74%, 43%, 0.5)",
+   11847635,
+   "hsla(197, 74%, 43%, 0.5)"
+  ]
 
 
   var agglomeration_stroke_color =[
-                           "step",
-                           ["get", "Population_2015"],
-                           "hsla(0, 0%, 8%, 1)",
-                           10000,
-                           "hsla(55, 30%, 93%, 1)",
-                           30000,
-                           "hsla(60, 100%, 90%, 1)",
-                           100000,
-                           "hsla(98, 55%, 81%, 1)",
-                           300000,
-                           "hsla(166, 44%, 65%, 1)",
-                           1000000,
-                           "hsla(186, 53%, 51%, 1)",
-                           2000000,
-                           "hsla(197, 74%, 43%, 1)",
-                           11847635,
-                           "hsla(197, 74%, 43%, 1)"
-                          ]
+   "step",
+   ["get", "Population_2015"],
+   "hsla(0, 0%, 8%, 1)",
+   10000,
+   "hsla(55, 30%, 93%, 1)",
+   30000,
+   "hsla(60, 100%, 90%, 1)",
+   100000,
+   "hsla(98, 55%, 81%, 1)",
+   300000,
+   "hsla(166, 44%, 65%, 1)",
+   1000000,
+   "hsla(186, 53%, 51%, 1)",
+   2000000,
+   "hsla(197, 74%, 43%, 1)",
+   11847635,
+   "hsla(197, 74%, 43%, 1)"
+  ]
 
 
 
@@ -90,20 +90,20 @@ class Application extends React.Component {
         'africapolis_agglos',
       {
         type: 'vector',
-        url: 'mapbox://mkmd.3oidh3is'
+        url: 'mapbox://mkmd.3e0rk98j'
       }
     );
 
-      map.addLayer({
+    map.addLayer({
         id: 'agglomerations',
         source:'africapolis_agglos',
         type: 'circle',
-        'source-layer':'africapolis2020-3al5d8',
+        'source-layer':'africapolis2020-3mv6ux',
         filter:[">","Population_2015",0],
         paint: {
-       'circle-stroke-color': agglomeration_stroke_color,
-       'circle-stroke-width': 3,
-       'circle-color': agglomeration_fill_color
+         'circle-stroke-color': agglomeration_stroke_color,
+         'circle-stroke-width': 3,
+         'circle-color': agglomeration_fill_color
         }
       });
     });
@@ -115,19 +115,15 @@ function add_country(obj,country) {map.addLayer({
   id: 'agglomerations',
   source:'africapolis_agglos',
   type: 'circle',
-  'source-layer':'africapolis2020-3al5d8',
+  'source-layer':'africapolis2020-3mv6ux',
   filter:["all",["==","ISO3",country],[">","Population_2015",0]],
   paint: {
- 'circle-stroke-color': agglomeration_stroke_color,
- 'circle-stroke-width': 3,
- 'circle-color': agglomeration_fill_color
+   'circle-stroke-color': agglomeration_stroke_color,
+   'circle-stroke-width': 3,
+   'circle-color': agglomeration_fill_color
   }
 });
 }
-    map.on('load', function(){
-remove('agglomerations');
-add_country('agglomerations','NER');
-});
 
 }
 
@@ -140,11 +136,11 @@ handleChange = selectedOption => {
   this.setState(
     { selectedOption },
     () => {
-      // remove('agglomerations')
-      // add_country('agglomerations',this.state.selectedOption)
-      console.log(`Option selected:`, this.state.selectedOption)
-
-
+      // map.on('load', function(){
+      //   remove('agglomerations');
+      //   add_country('agglomerations','NER');
+      // });
+      console.log(`Option selected:`, this.state.selectedOption.value)
     }
   );
   }
