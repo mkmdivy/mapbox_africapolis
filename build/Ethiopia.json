@@ -1,0 +1,3749 @@
+{
+    "EN_country":"Ethiopia",
+    "FR_country":"Éthiopie",
+    "ID":[2,16,0],
+    "Upop":[503398,778117,1340500,2385198,3895256,6520588,11064323],
+    "Urbanlevel":[0.03,0.04,0.05,0.07,0.08,0.11,0.14,0.27],
+    "Numagglos":[6,11,24,45,78,147,289,510],
+    "Mpop":[0.72,0.7,0.59,0.54,0.46,0.37,0.27,0.15],
+    "ADBA":[174,123,72,56,47,37,24,19],
+    "Agglomerations":[
+    {
+                 "ID":[2,16,20],
+                "A_Name":"Addis Ababa City",
+                "Longlat":[38.565,8.884],
+                "A_Upop":[363424,541699,795900,1287595,1804507,2406005,2985585,3711329],
+                "Metropole":"Yes"
+                },
+                  {
+                 "ID":[2,16,35],
+                "A_Name":"Sodo Town",
+                "Longlat":[37.612,7.112],
+                "A_Upop":[0,0,11410,20609,30953,51000,96897,2261958],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,39],
+                "A_Name":"Hawassa City",
+                "Longlat":[38.408,6.743],
+                "A_Upop":[0,0,10740,27146,53069,100889,200287,2182604],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,148],
+                "A_Name":"Harare Urban",
+                "Longlat":[42.046,9.368],
+                "A_Upop":[41948,41931,44580,59772,70212,86206,109585,464766],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,196],
+                "A_Name":"Adama Town",
+                "Longlat":[39.267,8.535],
+                "A_Upop":[0,0,37620,65079,103523,164176,254525,339924],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,203],
+                "A_Name":"Mekele Town",
+                "Longlat":[39.461,13.514],
+                "A_Upop":[0,15347,27100,49798,80533,140112,251321,329603],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,207],
+                "A_Name":"Gonder Town",
+                "Longlat":[37.419,12.569],
+                "A_Upop":[13665,22788,34630,63604,98181,148760,244874,323900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,237],
+                "A_Name":"Dire Dawa-Urban",
+                "Longlat":[41.844,9.607],
+                "A_Upop":[26440,42113,59420,90818,133346,193377,248764,277000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,241],
+                "A_Name":"Yirga Chefe town",
+                "Longlat":[38.206,6.194],
+                "A_Upop":[0,0,0,0,10102,13090,19276,271222],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,279],
+                "A_Name":"Bahir Dar Town",
+                "Longlat":[37.405,11.594],
+                "A_Upop":[0,0,20480,40973,76409,119914,183869,243300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,308],
+                "A_Name":"Shashemene Town",
+                "Longlat":[38.591,7.186],
+                "A_Upop":[0,0,10890,24282,42424,70454,116107,222324],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,341],
+                "A_Name":"Bedeno Town",
+                "Longlat":[41.633,9.095],
+                "A_Upop":[0,0,0,0,0,0,0,207237],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,348],
+                "A_Name":"Girawa Town",
+                "Longlat":[41.835,9.117],
+                "A_Upop":[0,0,0,0,0,0,0,205860],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,358],
+                "A_Name":"Hosaena Town",
+                "Longlat":[37.794,7.609],
+                "A_Upop":[0,0,0,13299,23455,45636,89246,197494],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,368],
+                "A_Name":"Jimma Town",
+                "Longlat":[36.831,7.678],
+                "A_Upop":[0,18864,39790,57271,76197,102408,139787,192668],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,374],
+                "A_Name":"Dessie Town",
+                "Longlat":[39.641,11.147],
+                "A_Upop":[46882,44898,44810,64027,84481,107200,142045,187900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,444],
+                "A_Name":"Jijiga Town",
+                "Longlat":[42.799,9.358],
+                "A_Upop":[0,0,0,16817,39392,88662,137498,159300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,475],
+                "A_Name":"Butajira Town",
+                "Longlat":[38.343,8.078],
+                "A_Upop":[0,0,0,11173,17385,25669,42579,148717],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,493],
+                "A_Name":"Arba Minch Town",
+                "Longlat":[37.555,6.034],
+                "A_Upop":[0,0,0,14889,31932,53387,95414,142900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,565],
+                "A_Name":"Chuko Town",
+                "Longlat":[38.596,7.05],
+                "A_Upop":[0,0,0,0,0,0,23521,124458],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,596],
+                "A_Name":"Asela Town",
+                "Longlat":[39.133,7.961],
+                "A_Upop":[0,10653,16690,30732,42699,55676,77758,116636],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,598],
+                "A_Name":"Nekemte Town",
+                "Longlat":[36.556,9.089],
+                "A_Upop":[0,0,15470,24000,38613,58523,86930,116365],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,660],
+                "A_Name":"Adigrat Town",
+                "Longlat":[39.456,14.302],
+                "A_Upop":[0,0,0,14581,26618,45626,66963,106169],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,690],
+                "A_Name":"Debre Brehan Town",
+                "Longlat":[39.52,9.666],
+                "A_Upop":[0,0,14150,23457,32775,49217,77165,102100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,708],
+                "A_Name":"Kombolcha Town",
+                "Longlat":[39.715,11.078],
+                "A_Upop":[0,0,0,10986,27137,47361,69392,100249],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,725],
+                "A_Name":"Debere Markos Town",
+                "Longlat":[37.735,10.328],
+                "A_Upop":[0,15024,26320,36643,45173,54982,73925,97800],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,762],
+                "A_Name":"Debretabor Town",
+                "Longlat":[38.023,11.857],
+                "A_Upop":[0,0,0,12774,19200,34074,65790,93594],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,798],
+                "A_Name":"Mizan Town",
+                "Longlat":[35.575,6.992],
+                "A_Upop":[0,0,0,0,0,21055,43416,89747],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,807],
+                "A_Name":"Arsi Negele Town",
+                "Longlat":[38.68,7.359],
+                "A_Upop":[0,0,0,0,18511,32426,54666,88210],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,815],
+                "A_Name":"Zeway/Batu Town",
+                "Longlat":[38.72,7.967],
+                "A_Upop":[0,0,0,0,12723,28685,50452,86784],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,827],
+                "A_Name":"Sawula Town",
+                "Longlat":[36.917,6.325],
+                "A_Upop":[0,0,0,0,11653,18644,28948,85526],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,843],
+                "A_Name":"Axum Town",
+                "Longlat":[38.732,14.123],
+                "A_Upop":[11040,13019,12870,17493,22822,34129,51929,84575],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,866],
+                "A_Name":"Shire Enidasilase Town",
+                "Longlat":[38.292,14.106],
+                "A_Upop":[0,0,0,11860,19165,33711,55012,83027],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,888],
+                "A_Name":"Ambo Town",
+                "Longlat":[37.829,8.969],
+                "A_Upop":[0,0,0,15388,22835,35684,55684,81004],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,911],
+                "A_Name":"Diniboya Town",
+                "Longlat":[37.887,7.341],
+                "A_Upop":[0,0,0,0,0,0,10349,79430],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,961],
+                "A_Name":"Agaro Town",
+                "Longlat":[36.563,7.844],
+                "A_Upop":[0,0,11590,18252,21298,24239,29408,74981],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,991],
+                "A_Name":"Weliso Town",
+                "Longlat":[37.979,8.546],
+                "A_Upop":[0,0,10880,16414,21503,30585,43771,73107],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1003],
+                "A_Name":"Woldiya Town",
+                "Longlat":[39.58,11.818],
+                "A_Upop":[0,0,0,14363,20437,32805,54603,72300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1013],
+                "A_Name":"Adwa Town",
+                "Longlat":[38.868,14.176],
+                "A_Upop":[0,11782,15230,16525,19399,30886,47078,71865],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1019],
+                "A_Name":"Robe Town",
+                "Longlat":[40.01,7.115],
+                "A_Upop":[0,0,0,0,16533,30020,51298,71515],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1032],
+                "A_Name":"Chiro Town",
+                "Longlat":[40.863,9.087],
+                "A_Upop":[0,0,0,11917,15235,24493,38905,70826],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1035],
+                "A_Name":"Welkite Town",
+                "Longlat":[37.722,8.29],
+                "A_Upop":[0,0,0,0,11664,20510,36785,70551],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1043],
+                "A_Name":"Chelenko Town",
+                "Longlat":[41.556,9.386],
+                "A_Upop":[0,0,0,0,0,0,11639,69946],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1070],
+                "A_Name":"Bure Town",
+                "Longlat":[37.052,10.714],
+                "A_Upop":[0,0,0,0,10969,16286,24159,68595],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1085],
+                "A_Name":"Bedesa Town",
+                "Longlat":[40.776,8.926],
+                "A_Upop":[0,0,0,0,0,13735,21004,67890],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1088],
+                "A_Name":"Tapi Town",
+                "Longlat":[35.396,7.227],
+                "A_Upop":[0,0,0,0,0,15693,31642,67755],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1095],
+                "A_Name":"Gambela Town",
+                "Longlat":[34.57,8.245],
+                "A_Upop":[0,0,0,0,10296,25897,47549,67489],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1203],
+                "A_Name":"Enseno Town",
+                "Longlat":[38.472,8.078],
+                "A_Upop":[0,0,0,0,0,0,14503,61306],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1242],
+                "A_Name":"Alaba Kulito Town",
+                "Longlat":[38.098,7.315],
+                "A_Upop":[0,0,0,0,12168,19684,34242,59944],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1275],
+                "A_Name":"Mudula Town",
+                "Longlat":[37.5,7.27],
+                "A_Upop":[0,0,0,0,0,0,0,58510],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1276],
+                "A_Name":"Fonko Town",
+                "Longlat":[37.907,7.642],
+                "A_Upop":[0,0,0,0,0,0,0,58481],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1298],
+                "A_Name":"Daye Town",
+                "Longlat":[38.837,6.549],
+                "A_Upop":[0,0,0,0,0,0,14762,57670],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1319],
+                "A_Name":"Meki Town",
+                "Longlat":[38.813,8.152],
+                "A_Upop":[0,0,0,0,15976,26618,41890,56675],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1326],
+                "A_Name":"Negele Town",
+                "Longlat":[39.577,5.334],
+                "A_Upop":[0,0,0,11837,18077,28646,40763,56476],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1332],
+                "A_Name":"Metu Town",
+                "Longlat":[35.583,8.285],
+                "A_Upop":[0,0,0,0,16155,23194,33253,56191],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1369],
+                "A_Name":"Gode Town",
+                "Longlat":[43.554,5.95],
+                "A_Upop":[0,0,0,0,11700,44578,47221,54700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1377],
+                "A_Name":"Alamata Town",
+                "Longlat":[39.568,12.419],
+                "A_Upop":[0,0,0,10684,20289,29208,38662,54262],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1414],
+                "A_Name":"Asosa Town",
+                "Longlat":[34.545,10.064],
+                "A_Upop":[0,0,0,0,0,16386,30852,52677],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1426],
+                "A_Name":"Bichena Town",
+                "Longlat":[38.206,10.441],
+                "A_Upop":[0,0,0,0,10559,14076,19181,52227],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1452],
+                "A_Name":"Wukro Town",
+                "Longlat":[39.594,13.788],
+                "A_Upop":[0,0,0,10786,14947,21736,35138,51476],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1475],
+                "A_Name":"Hayk Town",
+                "Longlat":[39.692,11.289],
+                "A_Upop":[0,0,0,0,0,10037,14957,50717],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1481],
+                "A_Name":"Mojo Town",
+                "Longlat":[39.124,8.583],
+                "A_Upop":[0,0,0,10457,18259,25195,34159,50428],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1499],
+                "A_Name":"Goba Town",
+                "Longlat":[39.971,7.007],
+                "A_Upop":[0,0,11780,19216,26015,29990,37010,49828],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1511],
+                "A_Name":"Tilili Town",
+                "Longlat":[37.007,10.835],
+                "A_Upop":[0,0,0,0,0,0,10710,49488],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1517],
+                "A_Name":"Kobo Town",
+                "Longlat":[41.501,9.367],
+                "A_Upop":[0,0,0,0,0,0,0,49372],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1553],
+                "A_Name":"Gimbi Town",
+                "Longlat":[35.828,9.175],
+                "A_Upop":[0,0,41290,11809,17052,24764,35813,48551],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1598],
+                "A_Name":"Mota Town",
+                "Longlat":[37.88,11.085],
+                "A_Upop":[0,0,0,0,15808,21487,30974,47182],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1635],
+                "A_Name":"Kara Mile Town",
+                "Longlat":[41.349,9.387],
+                "A_Upop":[0,0,0,0,0,0,0,46395],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1638],
+                "A_Name":"Morsito Town",
+                "Longlat":[37.799,7.67],
+                "A_Upop":[0,0,0,0,0,0,0,46328],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1649],
+                "A_Name":"Fiche Town",
+                "Longlat":[38.733,9.781],
+                "A_Upop":[0,0,0,15878,19413,23885,31791,45987],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1658],
+                "A_Name":"Hagere Mariyam Town",
+                "Longlat":[38.237,5.64],
+                "A_Upop":[0,0,0,0,10152,18230,32145,45739],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1662],
+                "A_Name":"Holeta Town",
+                "Longlat":[38.476,9.058],
+                "A_Upop":[0,0,0,10429,14504,19517,26933,45630],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1666],
+                "A_Name":"Gedeb Town",
+                "Longlat":[38.252,5.924],
+                "A_Upop":[0,0,0,0,0,0,11394,45589],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1688],
+                "A_Name":"Adola Town",
+                "Longlat":[38.986,5.882],
+                "A_Upop":[0,0,0,12555,17553,21380,26498,45127],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1699],
+                "A_Name":"Asassa Town",
+                "Longlat":[39.187,7.101],
+                "A_Upop":[0,0,0,0,0,14632,23885,44932],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1731],
+                "A_Name":"Lera Town",
+                "Longlat":[37.872,7.754],
+                "A_Upop":[0,0,0,0,0,0,0,44090],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1744],
+                "A_Name":"Bonga Town",
+                "Longlat":[36.227,7.282],
+                "A_Upop":[0,0,0,0,0,14656,26577,43909],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1771],
+                "A_Name":"Moyale",
+                "Longlat":[39.053,3.548],
+                "A_Upop":[0,0,0,0,0,16538,32522,43349],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1774],
+                "A_Name":"Dembi Dolo Town",
+                "Longlat":[34.8,8.539],
+                "A_Upop":[0,0,0,12326,17160,23628,34029,43300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1775],
+                "A_Name":"Jinka Town",
+                "Longlat":[36.567,5.787],
+                "A_Upop":[0,0,0,0,0,15549,25831,43278],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1778],
+                "A_Name":"Gerbe Guracha Town",
+                "Longlat":[38.429,9.806],
+                "A_Upop":[0,0,0,0,0,14519,22957,43254],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1815],
+                "A_Name":"Guder Town",
+                "Longlat":[37.756,8.959],
+                "A_Upop":[0,0,0,0,0,11669,17042,42218],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1817],
+                "A_Name":"Deder Town",
+                "Longlat":[41.453,9.309],
+                "A_Upop":[0,0,0,0,0,0,14994,42193],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1823],
+                "A_Name":"Mersa Town",
+                "Longlat":[39.605,11.666],
+                "A_Upop":[0,0,0,0,0,10490,19090,41992],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1848],
+                "A_Name":"Injebara Town",
+                "Longlat":[36.903,10.948],
+                "A_Upop":[0,0,0,0,0,0,24927,41435],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1863],
+                "A_Name":"Maychew Town",
+                "Longlat":[39.549,12.787],
+                "A_Upop":[0,0,0,12371,17258,21364,27257,41055],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1884],
+                "A_Name":"Finote Selam Town",
+                "Longlat":[37.263,10.685],
+                "A_Upop":[0,0,0,0,11147,18464,30665,40600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1888],
+                "A_Name":"Hirna Town",
+                "Longlat":[41.083,9.235],
+                "A_Upop":[0,0,0,0,0,10347,13453,40518],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1906],
+                "A_Name":"Adet Town",
+                "Longlat":[37.496,11.257],
+                "A_Upop":[0,0,0,0,0,15004,22675,40127],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1909],
+                "A_Name":"Qericha Town",
+                "Longlat":[38.432,5.763],
+                "A_Upop":[0,0,0,0,0,0,11412,40074],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1955],
+                "A_Name":"Debark Town",
+                "Longlat":[37.897,13.134],
+                "A_Upop":[0,0,0,0,11636,17116,24646,39373],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1972],
+                "A_Name":"Bedele Town",
+                "Longlat":[36.347,8.454],
+                "A_Upop":[0,0,0,0,0,14946,22553,39140],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1983],
+                "A_Name":"Bokoji Town",
+                "Longlat":[39.251,7.525],
+                "A_Upop":[0,0,0,0,0,12566,20505,39017],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1984],
+                "A_Name":"Sululta Town",
+                "Longlat":[38.758,9.155],
+                "A_Upop":[0,0,0,0,0,0,0,39014],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1985],
+                "A_Name":"Kobo Town",
+                "Longlat":[39.633,12.153],
+                "A_Upop":[0,0,0,12053,17448,22574,29438,39000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1991],
+                "A_Name":"Kofele Town",
+                "Longlat":[38.758,7.093],
+                "A_Upop":[0,0,0,0,0,0,15573,38913],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,1993],
+                "A_Name":"Dangila Town",
+                "Longlat":[36.847,11.261],
+                "A_Upop":[0,0,0,0,13240,19208,29380,38900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2033],
+                "A_Name":"Sendafa Town",
+                "Longlat":[39.039,9.151],
+                "A_Upop":[0,0,0,0,0,0,14216,38233],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2046],
+                "A_Name":"Degehabur Town",
+                "Longlat":[43.566,8.221],
+                "A_Upop":[0,0,0,0,0,29307,32799,38000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2091],
+                "A_Name":"Kebridehar Town",
+                "Longlat":[44.276,6.738],
+                "A_Upop":[0,0,0,0,0,26438,31939,37000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2100],
+                "A_Name":"Merawi Town",
+                "Longlat":[37.172,11.401],
+                "A_Upop":[0,0,0,0,0,12805,22116,36783],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2101],
+                "A_Name":"Hamusit Town",
+                "Longlat":[37.546,11.784],
+                "A_Upop":[0,0,0,0,0,0,0,36711],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2103],
+                "A_Name":"Gidole Town",
+                "Longlat":[37.356,5.641],
+                "A_Upop":[0,0,0,0,0,10180,16809,36683],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2119],
+                "A_Name":"Chagni Town",
+                "Longlat":[36.503,10.957],
+                "A_Upop":[0,0,0,0,13099,20106,27493,36400],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2121],
+                "A_Name":"Were Mehamed",
+                "Longlat":[42.165,9.486],
+                "A_Upop":[0,0,0,0,0,0,13772,36392],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2138],
+                "A_Name":"Kemise Town",
+                "Longlat":[39.867,10.72],
+                "A_Upop":[0,0,0,0,0,14162,22974,35977],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2145],
+                "A_Name":"Babile Town",
+                "Longlat":[42.337,9.221],
+                "A_Upop":[0,0,0,0,0,12431,20484,35879],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2175],
+                "A_Name":"Mukutin Town",
+                "Longlat":[35.505,6.901],
+                "A_Upop":[0,0,0,0,0,0,11030,35463],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2176],
+                "A_Name":"Eteya Town",
+                "Longlat":[39.234,8.131],
+                "A_Upop":[0,0,0,0,0,10132,17335,35461],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2180],
+                "A_Name":"Kuyera Town",
+                "Longlat":[38.645,7.261],
+                "A_Upop":[0,0,0,0,0,0,11782,35432],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2216],
+                "A_Name":"Sekota Town",
+                "Longlat":[39.032,12.625],
+                "A_Upop":[0,0,10300,0,0,12764,26441,35000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2322],
+                "A_Name":"Shakiso Town",
+                "Longlat":[38.912,5.773],
+                "A_Upop":[0,0,0,0,11331,18725,26492,33700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2348],
+                "A_Name":"Dolo Town",
+                "Longlat":[42.054,4.181],
+                "A_Upop":[0,0,0,0,0,23120,28749,33300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2351],
+                "A_Name":"Seyo Town",
+                "Longlat":[38.762,10.753],
+                "A_Upop":[0,0,0,0,0,0,0,33279],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2355],
+                "A_Name":"Wereta Town",
+                "Longlat":[37.688,11.914],
+                "A_Upop":[0,0,0,0,12043,17710,25100,33200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2360],
+                "A_Name":"Bako Town",
+                "Longlat":[37.052,9.133],
+                "A_Upop":[0,0,0,0,0,12855,19009,33136],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2370],
+                "A_Name":"Melka Softu",
+                "Longlat":[41.84,3.934],
+                "A_Upop":[0,0,0,0,0,20542,28432,33000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2399],
+                "A_Name":"Shewa Robit Town",
+                "Longlat":[39.897,9.988],
+                "A_Upop":[0,0,0,0,12239,15715,20788,32635],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2402],
+                "A_Name":"Humera Town",
+                "Longlat":[36.612,14.279],
+                "A_Upop":[0,0,0,0,12667,17405,25244,32600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2405],
+                "A_Name":"Robe Town",
+                "Longlat":[39.625,7.856],
+                "A_Upop":[0,0,0,0,0,11848,17527,32583],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2408],
+                "A_Name":"Lumame Town",
+                "Longlat":[37.935,10.234],
+                "A_Upop":[0,0,0,0,0,0,10948,32541],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2452],
+                "A_Name":"Gelemso Town",
+                "Longlat":[40.521,8.812],
+                "A_Upop":[0,0,0,0,0,13151,19037,31979],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2465],
+                "A_Name":"Gimbicho Town",
+                "Longlat":[37.608,7.437],
+                "A_Upop":[0,0,0,0,0,0,10895,31777],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2478],
+                "A_Name":"Adi Gudom Town",
+                "Longlat":[39.514,13.244],
+                "A_Upop":[0,0,0,0,0,0,0,31641],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2490],
+                "A_Name":"Matala Hemibecho",
+                "Longlat":[37.671,7.135],
+                "A_Upop":[0,0,0,0,0,0,11384,31475],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2518],
+                "A_Name":"Shendi Town",
+                "Longlat":[36.945,10.641],
+                "A_Upop":[0,0,0,0,0,0,12547,31218],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2550],
+                "A_Name":"Ginichi Town",
+                "Longlat":[38.142,9.03],
+                "A_Upop":[0,0,0,0,0,13564,20965,30839],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2560],
+                "A_Name":"Merito Lemariyam Town",
+                "Longlat":[38.262,10.87],
+                "A_Upop":[0,0,0,0,0,0,14505,30724],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2562],
+                "A_Name":"Nefas Mewicha Town",
+                "Longlat":[38.474,11.741],
+                "A_Upop":[0,0,0,0,0,14219,23207,30700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2573],
+                "A_Name":"Kersa Town",
+                "Longlat":[38.987,7.534],
+                "A_Upop":[0,0,0,0,0,0,12982,30601],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2574],
+                "A_Name":"Dodola Town",
+                "Longlat":[39.179,6.977],
+                "A_Upop":[0,0,0,0,11226,16708,24062,30600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2589],
+                "A_Name":"Bati Town",
+                "Longlat":[40.009,11.195],
+                "A_Upop":[0,0,0,10085,12188,15167,19752,30415],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2596],
+                "A_Name":"Chelelektu Town",
+                "Longlat":[38.142,6.005],
+                "A_Upop":[0,0,0,0,0,0,0,30354],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2625],
+                "A_Name":"Asayta Town",
+                "Longlat":[41.436,11.573],
+                "A_Upop":[0,0,0,0,11097,15738,19427,30008],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2650],
+                "A_Name":"Nejo Town",
+                "Longlat":[35.502,9.494],
+                "A_Upop":[0,0,0,0,0,14230,21943,29747],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2657],
+                "A_Name":"Chenicha Town",
+                "Longlat":[37.572,6.254],
+                "A_Upop":[0,0,0,0,0,0,13026,29682],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2681],
+                "A_Name":"Gundo Meskel Town",
+                "Longlat":[38.677,10.227],
+                "A_Upop":[0,0,0,0,0,0,0,29407],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2750],
+                "A_Name":"Durbete Town",
+                "Longlat":[36.945,11.352],
+                "A_Upop":[0,0,0,0,0,0,13921,28821],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2775],
+                "A_Name":"Addis Kidam Town",
+                "Longlat":[36.863,11.085],
+                "A_Upop":[0,0,0,0,0,0,10524,28581],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2782],
+                "A_Name":"Dera Town",
+                "Longlat":[39.323,8.326],
+                "A_Upop":[0,0,0,0,0,11548,17103,28508],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2787],
+                "A_Name":"Asebot Town",
+                "Longlat":[40.685,9.153],
+                "A_Upop":[0,0,0,0,0,0,0,28444],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2796],
+                "A_Name":"Meti Town",
+                "Longlat":[35.334,7.257],
+                "A_Upop":[0,0,0,0,0,0,0,28357],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2808],
+                "A_Name":"Kutaber Town",
+                "Longlat":[39.554,11.256],
+                "A_Upop":[0,0,0,0,0,0,0,28206],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2857],
+                "A_Name":"Feres Bet Town",
+                "Longlat":[37.586,10.854],
+                "A_Upop":[0,0,0,0,0,0,0,27774],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2858],
+                "A_Name":"Dubti Town",
+                "Longlat":[41.072,11.743],
+                "A_Upop":[0,0,0,0,10416,12285,17815,27752],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2881],
+                "A_Name":"Shambu Town",
+                "Longlat":[37.108,9.571],
+                "A_Upop":[0,0,0,0,0,12887,17343,27410],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2890],
+                "A_Name":"Ataye Town",
+                "Longlat":[39.95,10.342],
+                "A_Upop":[0,0,0,0,0,10596,13763,27392],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2892],
+                "A_Name":"Dembecha Town",
+                "Longlat":[37.477,10.563],
+                "A_Upop":[0,0,0,0,0,10521,15639,27377],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2904],
+                "A_Name":"Dabat Town",
+                "Longlat":[37.746,12.976],
+                "A_Upop":[0,0,0,0,0,10359,14880,27283],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2916],
+                "A_Name":"Lalibela Town",
+                "Longlat":[39.048,12.025],
+                "A_Upop":[0,0,0,0,0,11796,20549,27200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2917],
+                "A_Name":"Tis Abay Town",
+                "Longlat":[37.58,11.483],
+                "A_Upop":[0,0,0,0,0,0,20551,27200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2923],
+                "A_Name":"Yenache",
+                "Longlat":[37.636,11.168],
+                "A_Upop":[0,0,0,0,0,0,0,27180],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2946],
+                "A_Name":"Wonji Gefersa Town",
+                "Longlat":[39.219,8.454],
+                "A_Upop":[0,0,0,0,19720,13564,16255,27005],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2967],
+                "A_Name":"Debirewerik Town",
+                "Longlat":[38.16,10.657],
+                "A_Upop":[0,0,0,0,0,0,0,26772],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2974],
+                "A_Name":"Yabelo Town",
+                "Longlat":[38.117,4.888],
+                "A_Upop":[0,0,0,0,0,13158,20211,26729],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2997],
+                "A_Name":"Tebela Town",
+                "Longlat":[37.739,6.717],
+                "A_Upop":[0,0,0,0,0,0,0,26520],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,2998],
+                "A_Name":"Bifitu Geda",
+                "Longlat":[41.937,9.46],
+                "A_Upop":[0,0,0,0,0,0,12623,26499],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3014],
+                "A_Name":"Hagere Selam Town",
+                "Longlat":[38.521,6.489],
+                "A_Upop":[0,0,0,0,0,0,0,26383],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3029],
+                "A_Name":"Limu Genet Town",
+                "Longlat":[36.956,8.076],
+                "A_Upop":[0,0,0,0,0,0,11549,26221],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3047],
+                "A_Name":"Alem Ketema Town",
+                "Longlat":[38.981,10.059],
+                "A_Upop":[0,0,0,0,0,0,12320,26079],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3069],
+                "A_Name":"Mankusa Town",
+                "Longlat":[37.135,10.71],
+                "A_Upop":[0,0,0,0,0,0,0,25851],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3073],
+                "A_Name":"Waka Town",
+                "Longlat":[37.173,7.059],
+                "A_Upop":[0,0,0,0,0,0,12623,25802],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3078],
+                "A_Name":"Bona Town",
+                "Longlat":[38.709,6.529],
+                "A_Upop":[0,0,0,0,0,0,0,25799],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3086],
+                "A_Name":"Edega Hamus Town",
+                "Longlat":[39.572,14.185],
+                "A_Upop":[0,0,0,0,0,0,13974,25709],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3102],
+                "A_Name":"Gojo Town",
+                "Longlat":[38.085,9.258],
+                "A_Upop":[0,0,0,0,0,0,11017,25561],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3108],
+                "A_Name":"Shiraro Town",
+                "Longlat":[37.773,14.392],
+                "A_Upop":[0,0,0,0,0,11643,19824,25500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3126],
+                "A_Name":"Yejube Town",
+                "Longlat":[37.742,10.156],
+                "A_Upop":[0,0,0,0,0,0,0,25396],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3133],
+                "A_Name":"Begi Town",
+                "Longlat":[34.521,9.339],
+                "A_Upop":[0,0,0,0,0,0,0,25342],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3135],
+                "A_Name":"Adis Zemen Town",
+                "Longlat":[37.779,12.122],
+                "A_Upop":[0,0,0,0,11905,15131,19083,25300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3150],
+                "A_Name":"Korem Town",
+                "Longlat":[39.517,12.512],
+                "A_Upop":[0,0,0,0,13265,16877,19600,25200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3151],
+                "A_Name":"Ginir Town",
+                "Longlat":[40.715,7.137],
+                "A_Upop":[0,0,0,0,10505,14167,19778,25200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3198],
+                "A_Name":"Filakit Town",
+                "Longlat":[38.739,11.759],
+                "A_Upop":[0,0,0,0,0,0,13902,24893],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3208],
+                "A_Name":"Bulbula Town",
+                "Longlat":[38.641,7.728],
+                "A_Upop":[0,0,0,0,0,0,0,24810],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3229],
+                "A_Name":"Awash Sebat Kilo Town",
+                "Longlat":[40.166,8.994],
+                "A_Upop":[0,0,0,0,0,10330,17994,24700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3245],
+                "A_Name":"Harbu Town",
+                "Longlat":[39.788,10.92],
+                "A_Upop":[0,0,0,0,0,0,12855,24593],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3248],
+                "A_Name":"Chancho Town",
+                "Longlat":[38.753,9.3],
+                "A_Upop":[0,0,0,0,0,0,10083,24573],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3249],
+                "A_Name":"Yaya Town",
+                "Longlat":[38.71,6.69],
+                "A_Upop":[0,0,0,0,0,0,0,24564],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3250],
+                "A_Name":"Adaba Town",
+                "Longlat":[39.389,7.013],
+                "A_Upop":[0,0,0,0,0,10914,13984,24560],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3259],
+                "A_Name":"Qore Town",
+                "Longlat":[38.921,7.219],
+                "A_Upop":[0,0,0,0,0,0,0,24470],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3269],
+                "A_Name":"Welenchiti Town",
+                "Longlat":[39.432,8.656],
+                "A_Upop":[0,0,0,0,0,13209,17537,24425],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3290],
+                "A_Name":"Chere Town",
+                "Longlat":[39.091,6.543],
+                "A_Upop":[0,0,0,0,0,0,0,24243],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3294],
+                "A_Name":"Gobessa Town",
+                "Longlat":[39.487,7.616],
+                "A_Upop":[0,0,0,0,0,0,12896,24232],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3296],
+                "A_Name":"Abiyi Adi Town",
+                "Longlat":[38.992,13.63],
+                "A_Upop":[0,0,0,0,0,10954,18769,24200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3301],
+                "A_Name":"Debire Eyesus",
+                "Longlat":[37.932,10.593],
+                "A_Upop":[0,0,0,0,0,0,13111,24185],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3305],
+                "A_Name":"Koladiba Town",
+                "Longlat":[37.344,12.435],
+                "A_Upop":[0,0,0,0,0,10245,14346,24156],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3365],
+                "A_Name":"Lange Town",
+                "Longlat":[41.794,9.431],
+                "A_Upop":[0,0,0,0,0,0,0,23774],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3385],
+                "A_Name":"Ayikel Town",
+                "Longlat":[37.069,12.549],
+                "A_Upop":[0,0,0,0,0,10985,17873,23600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3395],
+                "A_Name":"Kele Town",
+                "Longlat":[37.905,5.832],
+                "A_Upop":[0,0,0,0,0,0,11007,23572],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3406],
+                "A_Name":"Kere",
+                "Longlat":[42.129,9.011],
+                "A_Upop":[0,0,0,0,0,0,0,23502],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3413],
+                "A_Name":"Mechara Town",
+                "Longlat":[40.321,8.611],
+                "A_Upop":[0,0,0,0,0,0,10685,23470],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3423],
+                "A_Name":"Muger Town",
+                "Longlat":[38.342,9.445],
+                "A_Upop":[0,0,0,0,0,0,0,23407],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3442],
+                "A_Name":"Logiya Town",
+                "Longlat":[40.975,11.718],
+                "A_Upop":[0,0,0,0,0,0,16976,23300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3467],
+                "A_Name":"Wonji Shewa Sugar Cane Plantat",
+                "Longlat":[39.215,8.399],
+                "A_Upop":[0,0,0,0,0,0,20776,23159],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3469],
+                "A_Name":"Ajibar Town",
+                "Longlat":[38.768,11.035],
+                "A_Upop":[0,0,0,0,0,0,0,23157],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3509],
+                "A_Name":"Amba Giyorgis Town",
+                "Longlat":[37.58,12.77],
+                "A_Upop":[0,0,0,0,0,0,14362,22941],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3538],
+                "A_Name":"Funyan Bira Town",
+                "Longlat":[42.392,9.355],
+                "A_Upop":[0,0,0,0,0,10079,13918,22773],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3539],
+                "A_Name":"Kedida Gubeta",
+                "Longlat":[38.263,6.024],
+                "A_Upop":[0,0,0,0,0,0,0,22771],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3545],
+                "A_Name":"Sagure Town",
+                "Longlat":[39.157,7.753],
+                "A_Upop":[0,0,0,0,0,0,13895,22724],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3575],
+                "A_Name":"Fendika Town",
+                "Longlat":[36.496,11.574],
+                "A_Upop":[0,0,0,0,0,0,0,22519],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3585],
+                "A_Name":"Shek Town",
+                "Longlat":[36.866,7.516],
+                "A_Upop":[0,0,0,0,0,0,0,22478],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3606],
+                "A_Name":"Arerti Town",
+                "Longlat":[39.426,8.927],
+                "A_Upop":[0,0,0,0,0,0,12086,22361],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3613],
+                "A_Name":"Maksegnit Town",
+                "Longlat":[37.56,12.375],
+                "A_Upop":[0,0,0,0,0,0,13534,22307],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3627],
+                "A_Name":"Yayu Town",
+                "Longlat":[35.803,8.349],
+                "A_Upop":[0,0,0,0,0,0,0,22213],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3655],
+                "A_Name":"Sire Town",
+                "Longlat":[39.495,8.278],
+                "A_Upop":[0,0,0,0,0,0,0,22069],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3695],
+                "A_Name":"Este Town",
+                "Longlat":[38.064,11.614],
+                "A_Upop":[0,0,0,0,0,11150,16456,21800],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3702],
+                "A_Name":"Hamibiso Town",
+                "Longlat":[38.634,9.808],
+                "A_Upop":[0,0,0,0,0,0,0,21781],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3733],
+                "A_Name":"Abomsa Town",
+                "Longlat":[39.834,8.487],
+                "A_Upop":[0,0,0,0,0,12392,16920,21500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3737],
+                "A_Name":"Degolu Town",
+                "Longlat":[39.257,10.443],
+                "A_Upop":[0,0,0,0,0,0,0,21490],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3738],
+                "A_Name":"Tora Town",
+                "Longlat":[38.421,7.87],
+                "A_Upop":[0,0,0,0,0,0,11682,21487],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3772],
+                "A_Name":"Asendabo Town",
+                "Longlat":[37.22,7.75],
+                "A_Upop":[0,0,0,0,0,0,0,21313],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3776],
+                "A_Name":"Tulu Bolo",
+                "Longlat":[38.218,8.661],
+                "A_Upop":[0,0,0,0,0,10517,16732,21300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3808],
+                "A_Name":"Wetet Abay Town",
+                "Longlat":[37.039,11.36],
+                "A_Upop":[0,0,0,0,0,0,0,21106],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3885],
+                "A_Name":"Bale Town",
+                "Longlat":[39.999,7.73],
+                "A_Upop":[0,0,0,0,0,0,0,20715],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3889],
+                "A_Name":"Chinaksen Town",
+                "Longlat":[42.604,9.507],
+                "A_Upop":[0,0,0,0,0,0,14160,20700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3890],
+                "A_Name":"Mehoni Town",
+                "Longlat":[39.644,12.797],
+                "A_Upop":[0,0,0,0,0,0,16061,20700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3903],
+                "A_Name":"Mendi Town",
+                "Longlat":[35.107,9.792],
+                "A_Upop":[0,0,0,0,0,11721,16188,20600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3914],
+                "A_Name":"Gedo Town",
+                "Longlat":[37.454,9.015],
+                "A_Upop":[0,0,0,0,0,0,12990,20571],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3929],
+                "A_Name":"Senbete Town",
+                "Longlat":[39.989,10.302],
+                "A_Upop":[0,0,0,0,0,0,0,20460],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3934],
+                "A_Name":"Ginido Town",
+                "Longlat":[37.75,8.588],
+                "A_Upop":[0,0,0,0,0,0,0,20436],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3935],
+                "A_Name":"Were Ilu Town",
+                "Longlat":[39.419,10.582],
+                "A_Upop":[0,0,0,0,0,0,10805,20427],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3943],
+                "A_Name":"Koshe Town",
+                "Longlat":[38.537,8.007],
+                "A_Upop":[0,0,0,0,0,0,0,20391],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3950],
+                "A_Name":"Seka Town",
+                "Longlat":[36.718,7.598],
+                "A_Upop":[0,0,0,0,0,0,0,20362],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3968],
+                "A_Name":"Andinet",
+                "Longlat":[37.139,11.46],
+                "A_Upop":[0,0,0,0,0,0,12568,20285],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3980],
+                "A_Name":"Burka Town",
+                "Longlat":[41.568,8.822],
+                "A_Upop":[0,0,0,0,0,0,0,20209],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3981],
+                "A_Name":"Wegel Tena Town",
+                "Longlat":[39.18,11.591],
+                "A_Upop":[0,0,0,0,0,0,0,20200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,3988],
+                "A_Name":"Alkeso Town",
+                "Longlat":[38.235,7.922],
+                "A_Upop":[0,0,0,0,0,0,0,20170],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4006],
+                "A_Name":"Wacha Town",
+                "Longlat":[35.794,7.143],
+                "A_Upop":[0,0,0,0,0,0,13394,20100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4007],
+                "A_Name":"Gutin town",
+                "Longlat":[36.633,9.563],
+                "A_Upop":[0,0,0,0,0,0,15775,20100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4014],
+                "A_Name":"Inticho Town",
+                "Longlat":[39.148,14.282],
+                "A_Upop":[0,0,0,0,0,0,11975,20073],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4020],
+                "A_Name":"Muke Turi Town",
+                "Longlat":[38.873,9.55],
+                "A_Upop":[0,0,0,0,0,0,0,20041],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4026],
+                "A_Name":"Biftu Town",
+                "Longlat":[35.267,6.819],
+                "A_Upop":[0,0,0,0,0,0,0,20020],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4049],
+                "A_Name":"Alem Gebeya Town",
+                "Longlat":[38.177,7.579],
+                "A_Upop":[0,0,0,0,0,0,0,19932],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4054],
+                "A_Name":"Bole Town",
+                "Longlat":[39.756,8.65],
+                "A_Upop":[0,0,0,0,0,0,0,19918],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4065],
+                "A_Name":"Kemba Town",
+                "Longlat":[37.176,6.054],
+                "A_Upop":[0,0,0,0,0,0,0,19878],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4071],
+                "A_Name":"Shahura Town",
+                "Longlat":[36.87,11.929],
+                "A_Upop":[0,0,0,0,0,0,0,19855],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4072],
+                "A_Name":"Tercha Town",
+                "Longlat":[37.171,7.151],
+                "A_Upop":[0,0,0,0,0,0,11563,19854],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4097],
+                "A_Name":"Gend Wen Town",
+                "Longlat":[38.094,10.935],
+                "A_Upop":[0,0,0,0,0,0,0,19753],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4099],
+                "A_Name":"Dajura Town",
+                "Longlat":[37.692,7.461],
+                "A_Upop":[0,0,0,0,0,0,0,19738],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4101],
+                "A_Name":"Anso Town",
+                "Longlat":[37.639,7.345],
+                "A_Upop":[0,0,0,0,0,0,0,19707],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4117],
+                "A_Name":"Laska Town",
+                "Longlat":[36.61,6.29],
+                "A_Upop":[0,0,0,0,0,0,0,19680],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4120],
+                "A_Name":"Dl Amba",
+                "Longlat":[37.15,12.541],
+                "A_Upop":[0,0,0,0,0,0,10394,19673],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4121],
+                "A_Name":"Kachise Town",
+                "Longlat":[37.857,9.598],
+                "A_Upop":[0,0,0,0,0,0,12807,19667],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4132],
+                "A_Name":"Tikil Dingay Town",
+                "Longlat":[37.414,12.743],
+                "A_Upop":[0,0,0,0,0,0,14831,19600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4133],
+                "A_Name":"Mieso Town",
+                "Longlat":[40.753,9.235],
+                "A_Upop":[0,0,0,0,0,0,15410,19600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4145],
+                "A_Name":"Kumbabe Town",
+                "Longlat":[36.114,8.367],
+                "A_Upop":[0,0,0,0,0,0,0,19548],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4155],
+                "A_Name":"Hurta Town",
+                "Longlat":[39.433,8.126],
+                "A_Upop":[0,0,0,0,0,11055,15327,19500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4168],
+                "A_Name":"Felege Birihan Town",
+                "Longlat":[38.053,10.751],
+                "A_Upop":[0,0,0,0,0,0,0,19455],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4177],
+                "A_Name":"Mekoye Town",
+                "Longlat":[39.754,10.707],
+                "A_Upop":[0,0,0,0,0,0,0,19405],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4184],
+                "A_Name":"Danisha Town",
+                "Longlat":[36.969,13.563],
+                "A_Upop":[0,0,0,0,0,0,0,19367],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4199],
+                "A_Name":"May Cadera Town",
+                "Longlat":[36.567,14.07],
+                "A_Upop":[0,0,0,0,0,0,14967,19300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4204],
+                "A_Name":"Dalocha Town",
+                "Longlat":[38.246,7.791],
+                "A_Upop":[0,0,0,0,0,0,0,19296],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4210],
+                "A_Name":"Gatira Town",
+                "Longlat":[36.212,8.002],
+                "A_Upop":[0,0,0,0,0,0,0,19276],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4275],
+                "A_Name":"Adele Town",
+                "Longlat":[39.911,7.789],
+                "A_Upop":[0,0,0,0,0,0,0,18990],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4282],
+                "A_Name":"Selekileha Town",
+                "Longlat":[38.474,14.117],
+                "A_Upop":[0,0,0,0,0,0,0,18933],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4296],
+                "A_Name":"Amanuel Town",
+                "Longlat":[37.565,10.442],
+                "A_Upop":[0,0,0,0,0,0,10336,18873],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4311],
+                "A_Name":"Ebinat Town",
+                "Longlat":[38.051,12.123],
+                "A_Upop":[0,0,0,0,0,10701,14202,18800],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4334],
+                "A_Name":"Manibuk Town",
+                "Longlat":[36.247,11.298],
+                "A_Upop":[0,0,0,0,0,0,10658,18693],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4340],
+                "A_Name":"Digua Tsion Town",
+                "Longlat":[37.745,10.867],
+                "A_Upop":[0,0,0,0,0,0,0,18677],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4423],
+                "A_Name":"Bonesha Town",
+                "Longlat":[38.092,7.518],
+                "A_Upop":[0,0,0,0,0,0,0,18328],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4427],
+                "A_Name":"Togo Chale town",
+                "Longlat":[43.33,9.595],
+                "A_Upop":[0,0,0,0,0,11083,15780,18300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4449],
+                "A_Name":"Hamus Gebeya Town",
+                "Longlat":[39.251,9.29],
+                "A_Upop":[0,0,0,0,0,0,12742,18193],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4467],
+                "A_Name":"Werabe Town",
+                "Longlat":[38.189,7.845],
+                "A_Upop":[0,0,0,0,0,0,12082,18100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4498],
+                "A_Name":"Meraro Town",
+                "Longlat":[39.231,7.408],
+                "A_Upop":[0,0,0,0,0,0,0,17930],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4502],
+                "A_Name":"Dejen Town",
+                "Longlat":[38.147,10.168],
+                "A_Upop":[0,0,0,0,0,0,10287,17908],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4524],
+                "A_Name":"Genda Wuha Town",
+                "Longlat":[36.409,12.775],
+                "A_Upop":[0,0,0,0,0,0,13430,17800],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4535],
+                "A_Name":"Ajebar Town",
+                "Longlat":[39.245,11.241],
+                "A_Upop":[0,0,0,0,0,0,0,17750],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4538],
+                "A_Name":"Hartishek Town",
+                "Longlat":[43.356,9.157],
+                "A_Upop":[0,0,0,0,0,14474,15295,17700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4554],
+                "A_Name":"Adishohu Town",
+                "Longlat":[39.514,12.934],
+                "A_Upop":[0,0,0,0,0,0,0,17632],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4586],
+                "A_Name":"Bamibasi Town",
+                "Longlat":[34.733,9.758],
+                "A_Upop":[0,0,0,0,0,0,11666,17500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4612],
+                "A_Name":"Mekane Berhan Town",
+                "Longlat":[38.106,13.012],
+                "A_Upop":[0,0,0,0,0,0,0,17426],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4622],
+                "A_Name":"Gasera Town",
+                "Longlat":[40.203,7.362],
+                "A_Upop":[0,0,0,0,0,0,0,17381],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4640],
+                "A_Name":"Mehal Meda Town",
+                "Longlat":[39.66,10.31],
+                "A_Upop":[0,0,0,0,0,0,13076,17300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4650],
+                "A_Name":"Degan Town",
+                "Longlat":[39.9,11.145],
+                "A_Upop":[0,0,0,0,0,0,0,17277],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4652],
+                "A_Name":"Anibesema Town",
+                "Longlat":[37.62,11.711],
+                "A_Upop":[0,0,0,0,0,0,0,17262],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4655],
+                "A_Name":"Bule Town",
+                "Longlat":[38.408,6.293],
+                "A_Upop":[0,0,0,0,0,0,0,17210],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4656],
+                "A_Name":"Solomo Town",
+                "Longlat":[38.596,6.078],
+                "A_Upop":[0,0,0,0,0,0,0,17207],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4658],
+                "A_Name":"Gimija Bet Town",
+                "Longlat":[36.891,10.849],
+                "A_Upop":[0,0,0,0,0,0,12984,17200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4668],
+                "A_Name":"Boreda Town",
+                "Longlat":[41.283,9.34],
+                "A_Upop":[0,0,0,0,0,0,0,17165],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4674],
+                "A_Name":"Gishe Abay Town",
+                "Longlat":[37.208,10.976],
+                "A_Upop":[0,0,0,0,0,0,0,17155],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4685],
+                "A_Name":"Denise {037}(Now Town)",
+                "Longlat":[38.687,10.926],
+                "A_Upop":[0,0,0,0,0,0,0,17101],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4686],
+                "A_Name":"Abala town",
+                "Longlat":[39.756,13.357],
+                "A_Upop":[0,0,0,0,0,0,12457,17100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4696],
+                "A_Name":"Haro",
+                "Longlat":[36.684,7.8],
+                "A_Upop":[0,0,0,0,0,0,0,17067],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4697],
+                "A_Name":"Enewari Town",
+                "Longlat":[39.143,9.894],
+                "A_Upop":[0,0,0,0,0,0,0,17065],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4705],
+                "A_Name":"Sokoru Town",
+                "Longlat":[37.425,7.919],
+                "A_Upop":[0,0,0,0,0,0,0,17050],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4709],
+                "A_Name":"Adami Tulu Town",
+                "Longlat":[38.704,7.856],
+                "A_Upop":[0,0,0,0,0,0,10478,17040],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4716],
+                "A_Name":"Abderafi Town",
+                "Longlat":[36.47,13.699],
+                "A_Upop":[0,0,0,0,0,0,12826,17000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4729],
+                "A_Name":"Shay Bench Town",
+                "Longlat":[35.777,6.96],
+                "A_Upop":[0,0,0,0,0,0,0,16976],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4737],
+                "A_Name":"Kimir Dingay Town",
+                "Longlat":[38.221,11.805],
+                "A_Upop":[0,0,0,0,0,0,0,16940],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4770],
+                "A_Name":"Olonkomi Town",
+                "Longlat":[38.247,9.004],
+                "A_Upop":[0,0,0,0,0,0,0,16819],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4774],
+                "A_Name":"Alem Tena Town",
+                "Longlat":[38.95,8.299],
+                "A_Upop":[0,0,0,0,0,0,13186,16800],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4846],
+                "A_Name":"Agena Town",
+                "Longlat":[37.966,8.151],
+                "A_Upop":[0,0,0,0,0,0,0,16518],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4849],
+                "A_Name":"Siltana Town",
+                "Longlat":[39.398,7.4],
+                "A_Upop":[0,0,0,0,0,0,0,16509],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4857],
+                "A_Name":"Molale Town",
+                "Longlat":[39.663,10.125],
+                "A_Upop":[0,0,0,0,0,0,0,16478],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4861],
+                "A_Name":"Hawuzen Town",
+                "Longlat":[39.426,13.986],
+                "A_Upop":[0,0,0,0,0,0,0,16453],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4868],
+                "A_Name":"Yezeleka",
+                "Longlat":[37.262,10.464],
+                "A_Upop":[0,0,0,0,0,0,0,16438],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4874],
+                "A_Name":"Hagere Selam Town",
+                "Longlat":[39.169,13.639],
+                "A_Upop":[0,0,0,0,0,0,0,16419],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4897],
+                "A_Name":"Agarfa Town",
+                "Longlat":[39.827,7.272],
+                "A_Upop":[0,0,0,0,0,0,0,16366],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4915],
+                "A_Name":"Haro Adi Town",
+                "Longlat":[39.918,8.872],
+                "A_Upop":[0,0,0,0,0,0,12804,16300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4942],
+                "A_Name":"Endibir Town",
+                "Longlat":[37.933,8.114],
+                "A_Upop":[0,0,0,0,0,0,0,16202],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4951],
+                "A_Name":"Awash Melkakunture Town",
+                "Longlat":[38.618,8.708],
+                "A_Upop":[0,0,0,0,0,0,0,16188],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4965],
+                "A_Name":"Adebaye Town",
+                "Longlat":[36.756,14.2],
+                "A_Upop":[0,0,0,0,0,0,11954,16122],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,4969],
+                "A_Name":"Wegada Town",
+                "Longlat":[38.238,11.397],
+                "A_Upop":[0,0,0,0,0,0,12181,16100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5012],
+                "A_Name":"Gesa Town",
+                "Longlat":[37.272,7.012],
+                "A_Upop":[0,0,0,0,0,0,0,16007],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5026],
+                "A_Name":"Chefa Robit Town",
+                "Longlat":[39.947,10.542],
+                "A_Upop":[0,0,0,0,0,0,0,15989],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5039],
+                "A_Name":"Wergesa Town",
+                "Longlat":[39.626,11.548],
+                "A_Upop":[0,0,0,0,0,0,0,15933],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5045],
+                "A_Name":"Metema Yohanis Town",
+                "Longlat":[36.156,12.955],
+                "A_Upop":[0,0,0,0,0,0,12026,15900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5055],
+                "A_Name":"Adi Remets Town",
+                "Longlat":[37.322,13.749],
+                "A_Upop":[0,0,0,0,0,0,0,15857],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5068],
+                "A_Name":"Deneba Town",
+                "Longlat":[37.363,7.841],
+                "A_Upop":[0,0,0,0,0,0,0,15807],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5078],
+                "A_Name":"Ejaji Town",
+                "Longlat":[37.328,8.998],
+                "A_Upop":[0,0,0,0,0,0,10369,15770],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5084],
+                "A_Name":"Abu Kuke",
+                "Longlat":[38.343,9.913],
+                "A_Upop":[0,0,0,0,0,0,0,15748],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5092],
+                "A_Name":"Masha Town",
+                "Longlat":[35.476,7.747],
+                "A_Upop":[0,0,0,0,0,0,0,15709],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5094],
+                "A_Name":"Mena town",
+                "Longlat":[39.848,6.409],
+                "A_Upop":[0,0,0,0,0,0,12326,15700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5147],
+                "A_Name":"Gerese Town",
+                "Longlat":[37.307,5.92],
+                "A_Upop":[0,0,0,0,0,0,0,15534],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5149],
+                "A_Name":"Jiga Town",
+                "Longlat":[37.377,10.673],
+                "A_Upop":[0,0,0,0,0,0,0,15531],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5157],
+                "A_Name":"Gida Ayana Town",
+                "Longlat":[36.626,9.875],
+                "A_Upop":[0,0,0,0,0,0,12170,15500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5168],
+                "A_Name":"Masha Town",
+                "Longlat":[39.052,11.233],
+                "A_Upop":[0,0,0,0,0,0,0,15471],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5186],
+                "A_Name":"Awash Melkasa Town",
+                "Longlat":[39.34,8.411],
+                "A_Upop":[0,0,0,0,0,0,0,15420],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5202],
+                "A_Name":"Baniko Goteti",
+                "Longlat":[38.388,5.92],
+                "A_Upop":[0,0,0,0,0,0,14263,15370],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5222],
+                "A_Name":"Fik Town",
+                "Longlat":[42.298,8.141],
+                "A_Upop":[0,0,0,0,0,10105,13221,15300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5238],
+                "A_Name":"Chuahit Town",
+                "Longlat":[37.224,12.336],
+                "A_Upop":[0,0,0,0,0,0,0,15239],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5246],
+                "A_Name":"Endaba Guna Town",
+                "Longlat":[38.184,13.947],
+                "A_Upop":[0,0,0,0,0,0,11781,15200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5247],
+                "A_Name":"Chiefera Town",
+                "Longlat":[40.011,11.608],
+                "A_Upop":[0,0,0,0,0,0,11055,15200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5253],
+                "A_Name":"Wuchale Town",
+                "Longlat":[39.605,11.515],
+                "A_Upop":[0,0,0,0,0,0,0,15183],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5262],
+                "A_Name":"Kuy Town",
+                "Longlat":[37.993,10.494],
+                "A_Upop":[0,0,0,0,0,0,0,15153],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5266],
+                "A_Name":"Bore Town",
+                "Longlat":[38.628,6.355],
+                "A_Upop":[0,0,0,0,0,0,10124,15126],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5276],
+                "A_Name":"Sire Town",
+                "Longlat":[36.868,9.04],
+                "A_Upop":[0,0,0,0,0,0,11848,15100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5286],
+                "A_Name":"Wayu Town",
+                "Longlat":[37.367,9.244],
+                "A_Upop":[0,0,0,0,0,0,0,15063],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5292],
+                "A_Name":"Azena Town",
+                "Longlat":[36.815,10.765],
+                "A_Upop":[0,0,0,0,0,0,0,15030],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5296],
+                "A_Name":"Aje Town",
+                "Longlat":[38.358,7.303],
+                "A_Upop":[0,0,0,0,0,0,0,15024],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5314],
+                "A_Name":"Robit Town",
+                "Longlat":[39.628,12.012],
+                "A_Upop":[0,0,0,0,0,0,0,14980],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5335],
+                "A_Name":"Rob Gebeya Town",
+                "Longlat":[37.768,10.552],
+                "A_Upop":[0,0,0,0,0,0,0,14912],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5349],
+                "A_Name":"Fincha Town",
+                "Longlat":[37.363,9.575],
+                "A_Upop":[0,0,0,0,0,0,10914,14895],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5353],
+                "A_Name":"Lemen Town",
+                "Longlat":[38.607,8.609],
+                "A_Upop":[0,0,0,0,0,0,0,14879],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5367],
+                "A_Name":"Addis Alem Town",
+                "Longlat":[38.4,9.045],
+                "A_Upop":[0,0,0,0,0,0,11635,14800],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5368],
+                "A_Name":"Micheta Town",
+                "Longlat":[40.322,8.567],
+                "A_Upop":[0,0,0,0,0,0,0,14800],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5410],
+                "A_Name":"Bilalo Irsjha Limat",
+                "Longlat":[38.24,7.144],
+                "A_Upop":[0,0,0,0,0,0,13177,14689],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5416],
+                "A_Name":"Chole Town",
+                "Longlat":[39.9,8.14],
+                "A_Upop":[0,0,0,0,0,0,0,14665],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5426],
+                "A_Name":"Weken Town",
+                "Longlat":[37.83,13.065],
+                "A_Upop":[0,0,0,0,0,0,0,14610],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5428],
+                "A_Name":"Mile Town",
+                "Longlat":[40.764,11.421],
+                "A_Upop":[0,0,0,0,0,0,10653,14600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5443],
+                "A_Name":"Nada Town",
+                "Longlat":[37.246,7.628],
+                "A_Upop":[0,0,0,0,0,0,0,14560],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5448],
+                "A_Name":"Yinesa Sositu",
+                "Longlat":[37.313,11.559],
+                "A_Upop":[0,0,0,0,0,0,0,14527],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5463],
+                "A_Name":"Kebri Beyah Town",
+                "Longlat":[43.178,9.098],
+                "A_Upop":[0,0,0,0,0,0,12531,14500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5487],
+                "A_Name":"Bele Town",
+                "Longlat":[37.527,6.918],
+                "A_Upop":[0,0,0,0,0,0,0,14463],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5490],
+                "A_Name":"Harla Balina",
+                "Longlat":[41.872,9.558],
+                "A_Upop":[0,0,0,0,0,0,11230,14441],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5491],
+                "A_Name":"Birbir Town",
+                "Longlat":[37.766,6.294],
+                "A_Upop":[0,0,0,0,0,0,0,14440],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5500],
+                "A_Name":"Qersa Town",
+                "Longlat":[41.863,9.452],
+                "A_Upop":[0,0,0,0,0,0,0,14403],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5503],
+                "A_Name":"Derwonaji Town",
+                "Longlat":[43.033,9.829],
+                "A_Upop":[0,0,0,0,0,17019,12458,14400],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5504],
+                "A_Name":"Misrak Imi Town",
+                "Longlat":[42.177,6.468],
+                "A_Upop":[0,0,0,0,0,0,12446,14400],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5505],
+                "A_Name":"Kelafo Town",
+                "Longlat":[44.203,5.591],
+                "A_Upop":[0,0,0,0,0,10339,12407,14400],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5510],
+                "A_Name":"Menider 24",
+                "Longlat":[36.701,9.579],
+                "A_Upop":[0,0,0,0,0,0,0,14376],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5526],
+                "A_Name":"Guliso Town",
+                "Longlat":[35.475,9.161],
+                "A_Upop":[0,0,0,0,0,0,0,14334],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5539],
+                "A_Name":"Fendika Town",
+                "Longlat":[36.948,11.693],
+                "A_Upop":[0,0,0,0,0,0,0,14284],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5546],
+                "A_Name":"Balemi Town",
+                "Longlat":[37.519,9.136],
+                "A_Upop":[0,0,0,0,0,0,0,14258],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5547],
+                "A_Name":"Bulki Town",
+                "Longlat":[36.788,6.28],
+                "A_Upop":[0,0,0,0,0,0,0,14256],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5589],
+                "A_Name":"Turre Wetera Elemo",
+                "Longlat":[38.686,7.208],
+                "A_Upop":[0,0,0,0,0,0,12688,14144],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5602],
+                "A_Name":"Dibate Town",
+                "Longlat":[36.265,10.775],
+                "A_Upop":[0,0,0,0,0,0,0,14100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5609],
+                "A_Name":"Obora",
+                "Longlat":[40.163,7.128],
+                "A_Upop":[0,0,0,0,0,0,12640,14090],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5617],
+                "A_Name":"Galesa Dibisa",
+                "Longlat":[38.44,5.692],
+                "A_Upop":[0,0,0,0,0,0,12614,14061],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5621],
+                "A_Name":"Amedber Town",
+                "Longlat":[37.887,11.914],
+                "A_Upop":[0,0,0,0,0,0,0,14037],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5632],
+                "A_Name":"Soyama Town",
+                "Longlat":[37.864,5.489],
+                "A_Upop":[0,0,0,0,0,0,0,14010],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5676],
+                "A_Name":"Metehara Town",
+                "Longlat":[39.919,8.904],
+                "A_Upop":[0,0,0,0,0,10716,10917,13900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5695],
+                "A_Name":"Golije Town",
+                "Longlat":[38.8,7.426],
+                "A_Upop":[0,0,0,0,0,0,0,13834],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5722],
+                "A_Name":"Digalu Kidame",
+                "Longlat":[39.252,7.763],
+                "A_Upop":[0,0,0,0,0,0,0,13756],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5736],
+                "A_Name":"Awubere Town",
+                "Longlat":[43.226,9.789],
+                "A_Upop":[0,0,0,0,0,16680,11816,13700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5743],
+                "A_Name":"Gerba Town",
+                "Longlat":[39.934,11.162],
+                "A_Upop":[0,0,0,0,0,0,0,13687],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5767],
+                "A_Name":"Kake Town",
+                "Longlat":[35.051,8.927],
+                "A_Upop":[0,0,0,0,0,0,0,13634],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5769],
+                "A_Name":"Chandba Delega",
+                "Longlat":[37.036,12.399],
+                "A_Upop":[0,0,0,0,0,0,12706,13629],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5775],
+                "A_Name":"Debre Sina Town",
+                "Longlat":[39.756,9.848],
+                "A_Upop":[0,0,0,0,0,0,10269,13600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5792],
+                "A_Name":"Lemo Genito Town",
+                "Longlat":[36.82,5.874],
+                "A_Upop":[0,0,0,0,0,0,0,13568],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5814],
+                "A_Name":"Abora Town",
+                "Longlat":[37.029,9.986],
+                "A_Upop":[0,0,0,0,0,0,0,13501],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5816],
+                "A_Name":"Arjo Town",
+                "Longlat":[36.499,8.754],
+                "A_Upop":[0,0,0,0,0,0,10603,13500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5817],
+                "A_Name":"Sanja Town",
+                "Longlat":[37.294,12.991],
+                "A_Upop":[0,0,0,0,0,0,10197,13500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5829],
+                "A_Name":"Kokosa Town",
+                "Longlat":[38.791,6.741],
+                "A_Upop":[0,0,0,0,0,0,0,13479],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5838],
+                "A_Name":"Bolo Giyorgis",
+                "Longlat":[39.381,8.849],
+                "A_Upop":[0,0,0,0,0,0,0,13444],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5844],
+                "A_Name":"Kuchi Town",
+                "Longlat":[37.018,10.482],
+                "A_Upop":[0,0,0,0,0,0,0,13420],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5864],
+                "A_Name":"Qoqa Town",
+                "Longlat":[39.041,8.451],
+                "A_Upop":[0,0,0,0,0,0,0,13382],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5866],
+                "A_Name":"Ayida Chema",
+                "Longlat":[37.558,7.022],
+                "A_Upop":[0,0,0,0,0,0,0,13377],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5869],
+                "A_Name":"Deneba Town",
+                "Longlat":[39.182,9.755],
+                "A_Upop":[0,0,0,0,0,0,0,13366],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5871],
+                "A_Name":"Jomora",
+                "Longlat":[36.626,10.722],
+                "A_Upop":[0,0,0,0,0,0,12452,13357],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5872],
+                "A_Name":"Homocho Town",
+                "Longlat":[37.719,7.686],
+                "A_Upop":[0,0,0,0,0,0,0,13356],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5879],
+                "A_Name":"Besko Elala",
+                "Longlat":[38.809,7.341],
+                "A_Upop":[0,0,0,0,0,0,11965,13337],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5889],
+                "A_Name":"Buei Town",
+                "Longlat":[38.552,8.326],
+                "A_Upop":[0,0,0,0,0,0,0,13300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5890],
+                "A_Name":"Gore Town",
+                "Longlat":[35.531,8.148],
+                "A_Upop":[0,0,0,0,0,0,10454,13300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5905],
+                "A_Name":"Ogolcho Town",
+                "Longlat":[39.015,8.04],
+                "A_Upop":[0,0,0,0,0,0,0,13267],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5908],
+                "A_Name":"Toli Beyem",
+                "Longlat":[37.132,7.623],
+                "A_Upop":[0,0,0,0,0,0,11890,13254],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5918],
+                "A_Name":"Gembe Town",
+                "Longlat":[36.665,7.839],
+                "A_Upop":[0,0,0,0,0,0,0,13232],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5922],
+                "A_Name":"Gebeze Mariyam Town",
+                "Longlat":[37.422,10.995],
+                "A_Upop":[0,0,0,0,0,0,0,13218],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5944],
+                "A_Name":"Kechema Chefe",
+                "Longlat":[39.125,6.969],
+                "A_Upop":[0,0,0,0,0,0,11808,13162],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5953],
+                "A_Name":"Elferida",
+                "Longlat":[38.392,5.717],
+                "A_Upop":[0,0,0,0,0,0,11782,13134],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5954],
+                "A_Name":"Eledima",
+                "Longlat":[38.595,5.703],
+                "A_Upop":[0,0,0,0,0,0,11782,13134],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5963],
+                "A_Name":"Inchini Town",
+                "Longlat":[38.374,9.321],
+                "A_Upop":[0,0,0,0,0,0,0,13107],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5969],
+                "A_Name":"Inango Town",
+                "Longlat":[35.681,9.168],
+                "A_Upop":[0,0,0,0,0,0,0,13093],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,5990],
+                "A_Name":"Yebokila Town",
+                "Longlat":[37.886,10.444],
+                "A_Upop":[0,0,0,0,0,0,0,13042],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6007],
+                "A_Name":"Sitir Dirma",
+                "Longlat":[39.735,10.842],
+                "A_Upop":[0,0,0,0,0,0,12133,13014],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6010],
+                "A_Name":"Melka Werer Town",
+                "Longlat":[40.18,9.327],
+                "A_Upop":[0,0,0,0,0,0,0,13000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6054],
+                "A_Name":"Idagarbi Town",
+                "Longlat":[39.07,14.042],
+                "A_Upop":[0,0,0,0,0,0,0,12900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6055],
+                "A_Name":"May Tsebri Town",
+                "Longlat":[38.133,13.56],
+                "A_Upop":[0,0,0,0,0,0,10029,12900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6097],
+                "A_Name":"Boke Tiko Town",
+                "Longlat":[40.644,8.727],
+                "A_Upop":[0,0,0,0,0,0,0,12793],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6098],
+                "A_Name":"Chefedonsa Town",
+                "Longlat":[39.119,8.969],
+                "A_Upop":[0,0,0,0,0,0,0,12792],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6104],
+                "A_Name":"Enfranz Town",
+                "Longlat":[37.62,12.248],
+                "A_Upop":[0,0,0,0,0,0,0,12772],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6176],
+                "A_Name":"Ado Boelo",
+                "Longlat":[39.265,7.259],
+                "A_Upop":[0,0,0,0,0,0,11299,12595],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6177],
+                "A_Name":"Burjawi Town",
+                "Longlat":[39.237,8.041],
+                "A_Upop":[0,0,0,0,0,0,0,12590],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6187],
+                "A_Name":"Kelala Town",
+                "Longlat":[38.998,10.584],
+                "A_Upop":[0,0,0,0,0,0,0,12569],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6202],
+                "A_Name":"Habe Town",
+                "Longlat":[39.768,7.823],
+                "A_Upop":[0,0,0,0,0,0,0,12543],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6212],
+                "A_Name":"Arb Gebeya Town",
+                "Longlat":[38.538,11.611],
+                "A_Upop":[0,0,0,0,0,0,0,12500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6213],
+                "A_Name":"Bulen Town",
+                "Longlat":[36.084,10.604],
+                "A_Upop":[0,0,0,0,0,0,0,12500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6242],
+                "A_Name":"Miret Amba",
+                "Longlat":[37.138,12.669],
+                "A_Upop":[0,0,0,0,0,0,11612,12456],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6251],
+                "A_Name":"Toba Town",
+                "Longlat":[36.487,8],
+                "A_Upop":[0,0,0,0,0,0,0,12446],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6252],
+                "A_Name":"Darisasake",
+                "Longlat":[38.525,5.806],
+                "A_Upop":[0,0,0,0,0,0,11164,12445],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6270],
+                "A_Name":"Eliyas Town",
+                "Longlat":[37.462,10.3],
+                "A_Upop":[0,0,0,0,0,0,0,12400],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6298],
+                "A_Name":"Menagesha Town",
+                "Longlat":[38.569,9.057],
+                "A_Upop":[0,0,0,0,0,0,0,12321],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6325],
+                "A_Name":"Kiloniso Mokoniso",
+                "Longlat":[38.357,5.648],
+                "A_Upop":[0,0,0,0,0,0,11011,12274],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6329],
+                "A_Name":"Majete Town",
+                "Longlat":[39.868,10.5],
+                "A_Upop":[0,0,0,0,0,0,0,12268],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6332],
+                "A_Name":"Bilida",
+                "Longlat":[36.802,7.787],
+                "A_Upop":[0,0,0,0,0,0,10998,12259],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6336],
+                "A_Name":"Lalibela",
+                "Longlat":[36.935,11.534],
+                "A_Upop":[0,0,0,0,0,0,11412,12241],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6347],
+                "A_Name":"Seyo Town",
+                "Longlat":[37.263,8.766],
+                "A_Upop":[0,0,0,0,0,0,0,12217],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6361],
+                "A_Name":"Siribo Town",
+                "Longlat":[36.972,7.716],
+                "A_Upop":[0,0,0,0,0,0,0,12195],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6362],
+                "A_Name":"Sengo Gebeya",
+                "Longlat":[39.3,10.916],
+                "A_Upop":[0,0,0,0,0,0,0,12193],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6363],
+                "A_Name":"Rob Gebeya Town",
+                "Longlat":[34.87,8.691],
+                "A_Upop":[0,0,0,0,0,0,0,12189],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6364],
+                "A_Name":"Meliyu Town",
+                "Longlat":[40.357,7.019],
+                "A_Upop":[0,0,0,0,0,0,0,12187],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6371],
+                "A_Name":"Bata Wayu",
+                "Longlat":[36.922,8.823],
+                "A_Upop":[0,0,0,0,0,0,10912,12164],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6442],
+                "A_Name":"Liguama Town",
+                "Longlat":[39.164,10.677],
+                "A_Upop":[0,0,0,0,0,0,0,12034],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6447],
+                "A_Name":"Side Town",
+                "Longlat":[37.888,10.926],
+                "A_Upop":[0,0,0,0,0,0,0,12009],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6454],
+                "A_Name":"Atsbi Endasilasie Town",
+                "Longlat":[39.741,13.874],
+                "A_Upop":[0,0,0,0,0,0,0,12000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6455],
+                "A_Name":"Adi Daero Town",
+                "Longlat":[38.177,14.312],
+                "A_Upop":[0,0,0,0,0,0,0,12000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6456],
+                "A_Name":"Aribaya Town",
+                "Longlat":[37.825,12.476],
+                "A_Upop":[0,0,0,0,0,0,0,12000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6483],
+                "A_Name":"Chacha Town",
+                "Longlat":[39.453,9.537],
+                "A_Upop":[0,0,0,0,0,0,0,11965],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6486],
+                "A_Name":"Abiyot Fana",
+                "Longlat":[37.139,11.326],
+                "A_Upop":[0,0,0,0,0,0,11148,11958],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6500],
+                "A_Name":"Beto Town",
+                "Longlat":[36.883,6.056],
+                "A_Upop":[0,0,0,0,0,0,0,11927],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6511],
+                "A_Name":"Rama Town",
+                "Longlat":[38.788,14.412],
+                "A_Upop":[0,0,0,0,0,0,0,11900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6519],
+                "A_Name":"Rim",
+                "Longlat":[37.208,11.31],
+                "A_Upop":[0,0,0,0,0,0,0,11896],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6523],
+                "A_Name":"Sigmo Town",
+                "Longlat":[36.088,7.901],
+                "A_Upop":[0,0,0,0,0,0,0,11888],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6531],
+                "A_Name":"Gedeb Gelicha",
+                "Longlat":[38.255,5.874],
+                "A_Upop":[0,0,0,0,0,0,11004,11858],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6540],
+                "A_Name":"Tuche Angalo",
+                "Longlat":[39.776,10.785],
+                "A_Upop":[0,0,0,0,0,0,11034,11835],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6541],
+                "A_Name":"Addis Alem",
+                "Longlat":[37.082,11.203],
+                "A_Upop":[0,0,0,0,0,0,11033,11834],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6551],
+                "A_Name":"Mendida Town",
+                "Longlat":[39.301,9.653],
+                "A_Upop":[0,0,0,0,0,0,0,11809],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6573],
+                "A_Name":"Hebo Molicha",
+                "Longlat":[38.463,5.808],
+                "A_Upop":[0,0,0,0,0,0,10553,11763],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6579],
+                "A_Name":"Kulubi Town",
+                "Longlat":[41.684,9.427],
+                "A_Upop":[0,0,0,0,0,0,0,11754],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6594],
+                "A_Name":"Mahidere Selam Town",
+                "Longlat":[38.757,10.595],
+                "A_Upop":[0,0,0,0,0,0,0,11711],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6601],
+                "A_Name":"Warder Town",
+                "Longlat":[45.341,6.974],
+                "A_Upop":[0,0,0,0,0,10773,10075,11700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6602],
+                "A_Name":"Geladin Town",
+                "Longlat":[46.414,6.975],
+                "A_Upop":[0,0,0,0,0,0,10079,11700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6619],
+                "A_Name":"Lehulum Selam",
+                "Longlat":[37.172,11.257],
+                "A_Upop":[0,0,0,0,0,0,10898,11690],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6626],
+                "A_Name":"Ropi Town",
+                "Longlat":[38.111,7.135],
+                "A_Upop":[0,0,0,0,0,0,0,11674],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6671],
+                "A_Name":"Kork",
+                "Longlat":[37.832,10.067],
+                "A_Upop":[0,0,0,0,0,0,10796,11580],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6684],
+                "A_Name":"Dembe Town",
+                "Longlat":[36.461,8.088],
+                "A_Upop":[0,0,0,0,0,0,0,11539],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6695],
+                "A_Name":"Mugi Town",
+                "Longlat":[34.602,8.574],
+                "A_Upop":[0,0,0,0,0,0,0,11500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6717],
+                "A_Name":"Ejere Town",
+                "Longlat":[38.52,9.911],
+                "A_Upop":[0,0,0,0,0,0,0,11482],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6765],
+                "A_Name":"Gura Harecho",
+                "Longlat":[39.335,8.098],
+                "A_Upop":[0,0,0,0,0,0,0,11353],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6771],
+                "A_Name":"Pigniwedo Town",
+                "Longlat":[34.26,7.646],
+                "A_Upop":[0,0,0,0,0,0,0,11343],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6791],
+                "A_Name":"Zalambesa Town",
+                "Longlat":[39.387,14.524],
+                "A_Upop":[0,0,0,0,0,0,0,11300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6792],
+                "A_Name":"Kamishi Town",
+                "Longlat":[35.862,9.501],
+                "A_Upop":[0,0,0,0,0,0,0,11300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6845],
+                "A_Name":"Darge",
+                "Longlat":[37.523,8.413],
+                "A_Upop":[0,0,0,0,0,0,0,11204],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6860],
+                "A_Name":"Faji",
+                "Longlat":[39.27,10.51],
+                "A_Upop":[0,0,0,0,0,0,10417,11174],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6871],
+                "A_Name":"Makafta Juru",
+                "Longlat":[38.595,10.199],
+                "A_Upop":[0,0,0,0,0,0,0,11147],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6887],
+                "A_Name":"Delgi Town",
+                "Longlat":[37.047,12.195],
+                "A_Upop":[0,0,0,0,0,0,0,11100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6888],
+                "A_Name":"Karat Town",
+                "Longlat":[37.44,5.34],
+                "A_Upop":[0,0,0,0,0,0,0,11100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6889],
+                "A_Name":"Kowerneng Town",
+                "Longlat":[33.953,8.334],
+                "A_Upop":[0,0,0,0,0,0,0,11100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6899],
+                "A_Name":"Aradom",
+                "Longlat":[39.621,12.075],
+                "A_Upop":[0,0,0,0,0,0,10345,11097],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6910],
+                "A_Name":"Ifedin",
+                "Longlat":[42.212,9.21],
+                "A_Upop":[0,0,0,0,0,0,0,11073],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6915],
+                "A_Name":"Gato",
+                "Longlat":[37.413,5.545],
+                "A_Upop":[0,0,0,0,0,0,10260,11057],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6936],
+                "A_Name":"Chefe Gudina",
+                "Longlat":[36.87,10.048],
+                "A_Upop":[0,0,0,0,0,0,0,11027],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6945],
+                "A_Name":"Yismala Town",
+                "Longlat":[36.911,11.603],
+                "A_Upop":[0,0,0,0,0,0,0,11000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,6971],
+                "A_Name":"Shebe Town",
+                "Longlat":[36.493,7.498],
+                "A_Upop":[0,0,0,0,0,0,0,10993],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7009],
+                "A_Name":"Amber Town",
+                "Longlat":[37.841,10.248],
+                "A_Upop":[0,0,0,0,0,0,0,10941],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7017],
+                "A_Name":"Fofa Town",
+                "Longlat":[37.524,7.857],
+                "A_Upop":[0,0,0,0,0,0,0,10918],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7021],
+                "A_Name":"Debre Mariyam",
+                "Longlat":[37.908,11.111],
+                "A_Upop":[0,0,0,0,0,0,10169,10908],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7024],
+                "A_Name":"Gerba Town",
+                "Longlat":[38.269,5.779],
+                "A_Upop":[0,0,0,0,0,0,0,10900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7025],
+                "A_Name":"Wachu Town",
+                "Longlat":[40.624,8.847],
+                "A_Upop":[0,0,0,0,0,0,0,10900],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7044],
+                "A_Name":"Agat (K.13)",
+                "Longlat":[38.457,11.612],
+                "A_Upop":[0,0,0,0,0,0,10153,10891],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7047],
+                "A_Name":"Efa Gamachu",
+                "Longlat":[40.434,8.738],
+                "A_Upop":[0,0,0,0,0,0,0,10882],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7058],
+                "A_Name":"Ilusinbitu",
+                "Longlat":[40.01,7.249],
+                "A_Upop":[0,0,0,0,0,0,0,10854],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7073],
+                "A_Name":"Arkisha",
+                "Longlat":[36.54,5.744],
+                "A_Upop":[0,0,0,0,0,0,10033,10812],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7081],
+                "A_Name":"Ashe",
+                "Longlat":[34.668,8.649],
+                "A_Upop":[0,0,0,0,0,0,0,10788],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7088],
+                "A_Name":"Mehal Amba",
+                "Longlat":[39.656,11.591],
+                "A_Upop":[0,0,0,0,0,0,10039,10768],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7099],
+                "A_Name":"Gechi Town",
+                "Longlat":[36.413,8.344],
+                "A_Upop":[0,0,0,0,0,0,0,10745],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7115],
+                "A_Name":"Cherti Dabeso",
+                "Longlat":[39.92,10.599],
+                "A_Upop":[0,0,0,0,0,0,0,10705],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7117],
+                "A_Name":"Goha Tsiyon Town",
+                "Longlat":[38.248,10.004],
+                "A_Upop":[0,0,0,0,0,0,0,10700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7118],
+                "A_Name":"Bila Town",
+                "Longlat":[35.597,9.363],
+                "A_Upop":[0,0,0,0,0,0,0,10700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7119],
+                "A_Name":"Hamusit Town",
+                "Longlat":[38.168,12.526],
+                "A_Upop":[0,0,0,0,0,0,0,10700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7120],
+                "A_Name":"Biher Town",
+                "Longlat":[36.857,13.976],
+                "A_Upop":[0,0,0,0,0,0,0,10700],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7139],
+                "A_Name":"Ego Town",
+                "Longlat":[38.986,7.617],
+                "A_Upop":[0,0,0,0,0,0,0,10681],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7152],
+                "A_Name":"Harqoncha Dodo",
+                "Longlat":[41.304,9.353],
+                "A_Upop":[0,0,0,0,0,0,0,10659],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7168],
+                "A_Name":"Yachiaurache",
+                "Longlat":[36.505,7.941],
+                "A_Upop":[0,0,0,0,0,0,0,10627],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7186],
+                "A_Name":"Mearay Town",
+                "Longlat":[38.993,13.284],
+                "A_Upop":[0,0,0,0,0,0,0,10600],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7220],
+                "A_Name":"Bilida Bukisa",
+                "Longlat":[38.482,5.819],
+                "A_Upop":[0,0,0,0,0,0,0,10544],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7234],
+                "A_Name":"Hebite",
+                "Longlat":[39.491,13.455],
+                "A_Upop":[0,0,0,0,0,0,10003,10512],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7240],
+                "A_Name":"Debire Zeyit Town",
+                "Longlat":[35.663,10.629],
+                "A_Upop":[0,0,0,0,0,0,0,10500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7241],
+                "A_Name":"Shinile Town",
+                "Longlat":[41.841,9.684],
+                "A_Upop":[0,0,0,0,0,0,0,10500],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7274],
+                "A_Name":"Akesta Town",
+                "Longlat":[39.171,10.881],
+                "A_Upop":[0,0,0,0,0,0,0,10470],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7323],
+                "A_Name":"Fireweyini Town",
+                "Longlat":[39.579,14.054],
+                "A_Upop":[0,0,0,0,0,0,0,10400],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7324],
+                "A_Name":"Chiri Town",
+                "Longlat":[36.187,7.129],
+                "A_Upop":[0,0,0,0,0,0,0,10400],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7337],
+                "A_Name":"Bazet Town",
+                "Longlat":[39.292,14.28],
+                "A_Upop":[0,0,0,0,0,0,0,10389],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7339],
+                "A_Name":"Mojo",
+                "Longlat":[34.935,8.618],
+                "A_Upop":[0,0,0,0,0,0,0,10388],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7344],
+                "A_Name":"Gidami Town",
+                "Longlat":[34.615,8.989],
+                "A_Upop":[0,0,0,0,0,0,0,10371],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7347],
+                "A_Name":"Gisa Baela Egziabher",
+                "Longlat":[36.674,11.187],
+                "A_Upop":[0,0,0,0,0,0,0,10363],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7385],
+                "A_Name":"Deksis Town",
+                "Longlat":[39.559,8.062],
+                "A_Upop":[0,0,0,0,0,0,0,10300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7386],
+                "A_Name":"Bare Town",
+                "Longlat":[42.614,4.638],
+                "A_Upop":[0,0,0,0,0,0,0,10300],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7431],
+                "A_Name":"Tijo Town",
+                "Longlat":[39.239,7.683],
+                "A_Upop":[0,0,0,0,0,0,0,10245],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7440],
+                "A_Name":"Halila Negele",
+                "Longlat":[39.858,8.024],
+                "A_Upop":[0,0,0,0,0,0,0,10233],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7453],
+                "A_Name":"Shere Horera",
+                "Longlat":[38.568,7.13],
+                "A_Upop":[0,0,0,0,0,0,0,10217],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7459],
+                "A_Name":"Gedebigie Town",
+                "Longlat":[37.739,12.875],
+                "A_Upop":[0,0,0,0,0,0,0,10200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7460],
+                "A_Name":"Bri Town",
+                "Longlat":[35.633,7.07],
+                "A_Upop":[0,0,0,0,0,0,0,10200],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7496],
+                "A_Name":"Melika Gemechu",
+                "Longlat":[42.031,9.245],
+                "A_Upop":[0,0,0,0,0,0,0,10159],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7528],
+                "A_Name":"Adi Arkay Town",
+                "Longlat":[38.058,13.448],
+                "A_Upop":[0,0,0,0,0,0,0,10100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7529],
+                "A_Name":"Berahile Town",
+                "Longlat":[40.009,13.841],
+                "A_Upop":[0,0,0,0,0,0,0,10100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7530],
+                "A_Name":"Etang Town",
+                "Longlat":[34.264,8.197],
+                "A_Upop":[0,0,0,0,0,0,0,10100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7531],
+                "A_Name":"Mirab Imi town (Ilmey Galbeed)",
+                "Longlat":[42.137,6.456],
+                "A_Upop":[0,0,0,0,0,0,0,10100],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7550],
+                "A_Name":"Robit",
+                "Longlat":[39.581,11.457],
+                "A_Upop":[0,0,0,0,0,0,0,10090],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7610],
+                "A_Name":"Kola Shera",
+                "Longlat":[37.564,6.092],
+                "A_Upop":[0,0,0,0,0,0,0,10001],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,7611],
+                "A_Name":"Efa Town",
+                "Longlat":[36.443,9.028],
+                "A_Upop":[0,0,0,0,0,0,0,10000],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8212],
+                "A_Name":"Akaki Beseka",
+                "Longlat":[38.794,8.863],
+                "A_Upop":[0,0,16560,42179,0,0,0,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8781],
+                "A_Name":"Bishoftu Town",
+                "Longlat":[38.971,8.747],
+                "A_Upop":[0,0,0,0,63311,84575,115521,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8782],
+                "A_Name":"Dila Town",
+                "Longlat":[38.3,6.41],
+                "A_Upop":[0,0,0,0,29321,43677,75376,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8783],
+                "A_Name":"Burayu Town",
+                "Longlat":[38.674,9.066],
+                "A_Upop":[0,0,0,0,0,20779,56488,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8784],
+                "A_Name":"Areka Town",
+                "Longlat":[37.705,7.07],
+                "A_Upop":[0,0,0,0,0,18927,40037,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8785],
+                "A_Name":"Yirga Alem Town",
+                "Longlat":[38.406,6.744],
+                "A_Upop":[0,0,0,0,20428,26846,38692,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8786],
+                "A_Name":"Durame Town",
+                "Longlat":[37.892,7.242],
+                "A_Upop":[0,0,0,0,0,12537,31208,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8787],
+                "A_Name":"Bodite Town",
+                "Longlat":[37.86,6.954],
+                "A_Upop":[0,0,0,0,0,17565,30762,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8788],
+                "A_Name":"Aleta Wondo Town",
+                "Longlat":[38.418,6.605],
+                "A_Upop":[0,0,0,0,10621,15398,28161,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8789],
+                "A_Name":"Haromaya Town",
+                "Longlat":[42.008,9.392],
+                "A_Upop":[0,0,0,0,0,15410,35513,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8790],
+                "A_Name":"Hadero Town",
+                "Longlat":[37.665,7.192],
+                "A_Upop":[0,0,0,0,0,0,22739,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8791],
+                "A_Name":"Shone Town",
+                "Longlat":[37.953,7.14],
+                "A_Upop":[0,0,0,0,0,11050,19898,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8792],
+                "A_Name":"Shinshicho Town",
+                "Longlat":[37.774,7.202],
+                "A_Upop":[0,0,0,0,0,0,18212,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8793],
+                "A_Name":"Leku Town",
+                "Longlat":[38.445,6.872],
+                "A_Upop":[0,0,0,0,0,10003,15081,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8794],
+                "A_Name":"Aman Town",
+                "Longlat":[35.581,6.993],
+                "A_Upop":[0,0,0,0,0,21055,43416,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8795],
+                "A_Name":"Melka Rafa Town",
+                "Longlat":[42.115,9.431],
+                "A_Upop":[0,0,0,0,0,0,14563,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8796],
+                "A_Name":"Gerachu Jalidu",
+                "Longlat":[38.445,5.756],
+                "A_Upop":[0,0,0,0,0,0,17808,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8797],
+                "A_Name":"Ifa Haromaya",
+                "Longlat":[41.99,9.404],
+                "A_Upop":[0,0,0,0,0,0,14096,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8798],
+                "A_Name":"Burka Negeya",
+                "Longlat":[42.165,9.486],
+                "A_Upop":[0,0,0,0,0,0,12945,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8799],
+                "A_Name":"Negeya",
+                "Longlat":[42.063,9.307],
+                "A_Upop":[0,0,0,0,0,0,11505,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8800],
+                "A_Name":"Adola Burqa",
+                "Longlat":[38.612,7.177],
+                "A_Upop":[0,0,0,0,0,0,11291,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8801],
+                "A_Name":"Mede Belina",
+                "Longlat":[42.034,9.342],
+                "A_Upop":[0,0,0,0,0,0,11170,0],
+                "Metropole":"No"
+                },
+                  {
+                 "ID":[2,16,8802],
+                "A_Name":"Kuro",
+                "Longlat":[42.003,9.457],
+                "A_Upop":[0,0,0,0,0,0,11149,0],
+                "Metropole":"No"
+                },
+                  {
+                "ID":[2,16,8803],
+                "A_Name":"Wererso Nono Menabechu",
+                "Longlat":[38.746,9.161],
+                "A_Upop":[0,0,0,0,0,0,11028,0],
+                "Metropole":"No"
+                }]
+}
