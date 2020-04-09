@@ -90,7 +90,7 @@ class Application extends React.Component {
         'africapolis_agglos',
       {
         type: 'vector',
-        url: 'mapbox://mkmd.10cgedso'
+        url: 'mapbox://mkmd.3oidh3is'
       }
     );
 
@@ -98,7 +98,7 @@ class Application extends React.Component {
         id: 'agglomerations',
         source:'africapolis_agglos',
         type: 'circle',
-        'source-layer':'africapolis2020-1jc3vn',
+        'source-layer':'africapolis2020-3al5d8',
         filter:[">","Population_2015",0],
         paint: {
        'circle-stroke-color': agglomeration_stroke_color,
@@ -111,12 +111,12 @@ class Application extends React.Component {
 
 function remove(obj) {map.removeLayer(obj)}
 
-function add_country(obj,country) { map.addLayer({
+function add_country(obj,country) {map.addLayer({
   id: 'agglomerations',
   source:'africapolis_agglos',
   type: 'circle',
-  'source-layer':'africapolis2020-1jc3vn',
-  filter:["==","ISO3",country],
+  'source-layer':'africapolis2020-3al5d8',
+  filter:["all",["==","ISO3",country],[">","Population_2015",0]],
   paint: {
  'circle-stroke-color': agglomeration_stroke_color,
  'circle-stroke-width': 3,
@@ -124,8 +124,11 @@ function add_country(obj,country) { map.addLayer({
   }
 });
 }
-//remove('agglomerations')
-//add_country('agglomerations','NER')
+    map.on('load', function(){
+remove('agglomerations');
+add_country('agglomerations','NER');
+});
+
 }
 
 
@@ -148,7 +151,56 @@ handleChange = selectedOption => {
 
   render() {
     const { selectedOption } = this.state;
-    const options = ["AGO","BDI","BEN","BFA","BWA","CAF","CIV","CMR","COD","COG","CPV","DJI","DZA","EGY","ERI","ETH","GAB","GHA","GIN","GMB","GNB","GNQ","KEN","LBR","LBY","LSO","MAR","MLI","MOZ","MRT","MWI","NAM","NER","NGA","RWA","SDN","SEN","SLE","SOM","SSD","STP","SWZ","TCD","TGO","TUN","TZA","UGA","ZAF","ZMB","ZWE"];
+    const options = [{ label:"Angola",value:"AGO" },
+{ label:"Burundi",value:"BDI" },
+{ label:"Benin",value:"BEN" },
+{ label:"Burkina Faso",value:"BFA" },
+{ label:"Botswana",value:"BWA" },
+{ label:"Central African Republic",value:"CAF" },
+{ label:"Cote d`Ivoire",value:"CIV" },
+{ label:"Cameroon",value:"CMR" },
+{ label:"Democratic Republic of the Congo",value:"COD" },
+{ label:"Republic of the Congo",value:"COG" },
+{ label:"Cabo Verde",value:"CPV" },
+{ label:"Djibouti",value:"DJI" },
+{ label:"Algeria",value:"DZA" },
+{ label:"Egypt",value:"EGY" },
+{ label:"Eritrea",value:"ERI" },
+{ label:"Ethiopia",value:"ETH" },
+{ label:"Gabon",value:"GAB" },
+{ label:"Ghana",value:"GHA" },
+{ label:"Guinea",value:"GIN" },
+{ label:"The Gambia",value:"GMB" },
+{ label:"Guinea-Bissau",value:"GNB" },
+{ label:"Equatorial Guinea",value:"GNQ" },
+{ label:"Kenya",value:"KEN" },
+{ label:"Liberia",value:"LBR" },
+{ label:"Libya",value:"LBY" },
+{ label:"Lesotho",value:"LSO" },
+{ label:"Morocco",value:"MAR" },
+{ label:"Mali",value:"MLI" },
+{ label:"Mozambique",value:"MOZ" },
+{ label:"Mauritania",value:"MRT" },
+{ label:"Malawi",value:"MWI" },
+{ label:"Namibia",value:"NAM" },
+{ label:"Niger",value:"NER" },
+{ label:"Nigeria",value:"NGA" },
+{ label:"Rwanda",value:"RWA" },
+{ label:"Sudan",value:"SDN" },
+{ label:"Senegal",value:"SEN" },
+{ label:"Sierra Leone",value:"SLE" },
+{ label:"Somalia",value:"SOM" },
+{ label:"South Sudan",value:"SSD" },
+{ label:"Sao Tome and Principe",value:"STP" },
+{ label:"Kingdom of Eswatini",value:"SWZ" },
+{ label:"Chad",value:"TCD" },
+{ label:"Togo",value:"TGO" },
+{ label:"Tunisia",value:"TUN" },
+{ label:"Tanzania",value:"TZA" },
+{ label:"Uganda",value:"UGA" },
+{ label:"South Africa",value:"ZAF" },
+{ label:"Zambia",value:"ZMB" },
+{ label:"Zimbabwe",value:"ZWE" }];
     return (
       <div>
         <div ref={el => this.mapContainer = el} className="mapContainer" >
