@@ -126,6 +126,8 @@ componentDidMount() {
       this.map.addSource('africapolis_country', { type: 'vector', url: 'mapbox://mkmd.ck19bzbfg07z42tmz06bk8soe-6dzi4'});
 // Add Agglomerations
       this.map.addSource('africapolis_agglos', { type: 'vector', url: 'mapbox://mkmd.3e0rk98j'});
+// Add Country label
+      this.map.addSource('africapolis_country_label', { type: 'vector', url: 'mapbox://mapbox.mapbox-streets-v7'});
 
 // Add Country layer
       this.map.addLayer({
@@ -158,6 +160,28 @@ componentDidMount() {
 //mkmd.ck19bzbfg07z42tmz06bk8soe-6dzi4
 //AfricaContinent
 //ISO3_CODE
+      this.map.addLayer({
+            id: 'country_labels',
+            source:'africapolis_country_label',
+            type: 'symbol',
+            'source-layer':'country_label',
+            filter:[ "all", [ "in", "$type", "Polygon", "LineString", "Point" ], [ "all", [ "in", "code", "AO", "BF", "BI", "BJ", "BW", "CD", "CF", "CG", "CI", "CM", "CV", "DJ", "DZ", "EG", "ER", "ET", "GA", "GH", "GM", "GN", "GQ", "GW", "KE", "LR", "LS", "LY", "MA", "ML", "MR", "MW", "MZ", "NA", "NE", "NG", "RW", "SD", "SL", "SN", "SO", "SS", "ST", "SZ", "TD", "TG", "TN", "TZ", "UG", "ZA", "ZM", "ZW" ] ] ],
+            layout: {
+              'text-field':["get","name_en"],
+              'text-font': [  "Helvetica Neue LT Std 75 Bold", "Arial Unicode MS Regular"],
+              'text-size': [ "interpolate", ["linear"], ["zoom"], 2, [ "step", ["get", "scalerank"], 10, 3, 8, 5, 5 ], 9, [ "step", ["get", "scalerank"], 35, 3, 27, 5, 22 ] ]
+
+              //'text-color':'#FFFF00'
+                //'circle-stroke-color': agglomeration_stroke_color,
+                //'circle-stroke-width': 3,
+                //'circle-color': agglomeration_fill_color
+            }
+        });
+
+      this.map.on('click', 'country_labels', function(e) {
+      console.log(e.features[0].properties.name_en)
+      });
+
 
 
     });
