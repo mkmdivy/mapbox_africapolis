@@ -5,6 +5,12 @@ import axios from 'axios';
 import Select from 'react-select';
 //// Access token for Africapolis mapbox account
 mapboxgl.accessToken = 'pk.eyJ1IjoibWttZCIsImEiOiJjajBqYjJpY2owMDE0Mndsbml0d2V1ZXczIn0.el8wQmA-TSJp2ggX8fJ1rA';
+
+
+const countryISOMapping = { DZ: 'DZA', AO: 'AGO', BJ: 'BEN', BW: 'BWA', BF: 'BFA', BI: 'BDI', CM: 'CMR', CV: 'CPV', CF: 'CAF', TD: 'TCD', CG: 'COG', CD: 'COD', CI: 'CIV', DJ: 'DJI', EG: 'EGY', GQ: 'GNQ', ER: 'ERI', ET: 'ETH', GA: 'GAB', GM: 'GMB', GH: 'GHA', GN: 'GIN', GW: 'GNB', KE: 'KEN', LS: 'LSO', LR: 'LBR', LY: 'LBY', MW: 'MWI', ML: 'MLI', MR: 'MRT', MA: 'MAR', MZ: 'MOZ', NA: 'NAM', NE: 'NER', NG: 'NGA', RW: 'RWA', ST: 'STP', SN: 'SEN', SL: 'SLE', SO: 'SOM', ZA: 'ZAF', SS: 'SSD', SD: 'SDN', SZ: 'SWZ', TZ: 'TZA', TG: 'TGO', TN: 'TUN', UG: 'UGA', ZM: 'ZMB', ZW: 'ZWE'}
+
+function getCountryISO3(countryCode) { return countryISOMapping[countryCode] }
+
 const agglomeration_fill_color =[
   "step",
   ["get", "Population_2015"],
@@ -43,56 +49,8 @@ const agglomeration_fill_color =[
   11847635,
   "hsla(197, 74%, 43%, 1)"
  ]
- const options = [{ label:"Angola",value:"AGO" },
-        { label:"Burundi",value:"BDI" },
-        { label:"Benin",value:"BEN" },
-        { label:"Burkina Faso",value:"BFA" },
-        { label:"Botswana",value:"BWA" },
-        { label:"Central African Republic",value:"CAF" },
-        { label:"Cote d`Ivoire",value:"CIV" },
-        { label:"Cameroon",value:"CMR" },
-        { label:"Democratic Republic of the Congo",value:"COD" },
-        { label:"Republic of the Congo",value:"COG" },
-        { label:"Cabo Verde",value:"CPV" },
-        { label:"Djibouti",value:"DJI" },
-        { label:"Algeria",value:"DZA" },
-        { label:"Egypt",value:"EGY" },
-        { label:"Eritrea",value:"ERI" },
-        { label:"Ethiopia",value:"ETH" },
-        { label:"Gabon",value:"GAB" },
-        { label:"Ghana",value:"GHA" },
-        { label:"Guinea",value:"GIN" },
-        { label:"The Gambia",value:"GMB" },
-        { label:"Guinea-Bissau",value:"GNB" },
-        { label:"Equatorial Guinea",value:"GNQ" },
-        { label:"Kenya",value:"KEN" },
-        { label:"Liberia",value:"LBR" },
-        { label:"Libya",value:"LBY" },
-        { label:"Lesotho",value:"LSO" },
-        { label:"Morocco",value:"MAR" },
-        { label:"Mali",value:"MLI" },
-        { label:"Mozambique",value:"MOZ" },
-        { label:"Mauritania",value:"MRT" },
-        { label:"Malawi",value:"MWI" },
-        { label:"Namibia",value:"NAM" },
-        { label:"Niger",value:"NER" },
-        { label:"Nigeria",value:"NGA" },
-        { label:"Rwanda",value:"RWA" },
-        { label:"Sudan",value:"SDN" },
-        { label:"Senegal",value:"SEN" },
-        { label:"Sierra Leone",value:"SLE" },
-        { label:"Somalia",value:"SOM" },
-        { label:"South Sudan",value:"SSD" },
-        { label:"Sao Tome and Principe",value:"STP" },
-        { label:"Kingdom of Eswatini",value:"SWZ" },
-        { label:"Chad",value:"TCD" },
-        { label:"Togo",value:"TGO" },
-        { label:"Tunisia",value:"TUN" },
-        { label:"Tanzania",value:"TZA" },
-        { label:"Uganda",value:"UGA" },
-        { label:"South Africa",value:"ZAF" },
-        { label:"Zambia",value:"ZMB" },
-        { label:"Zimbabwe",value:"ZWE" }];
+ const options = [{ label:"Angola",value:"AGO" }, { label:"Burundi",value:"BDI" }, { label:"Benin",value:"BEN" }, { label:"Burkina Faso",value:"BFA" }, { label:"Botswana",value:"BWA" }, { label:"Central African Republic",value:"CAF" }, { label:"Cote d`Ivoire",value:"CIV" }, { label:"Cameroon",value:"CMR" }, { label:"Democratic Republic of the Congo",value:"COD" }, { label:"Republic of the Congo",value:"COG" }, { label:"Cabo Verde",value:"CPV" }, { label:"Djibouti",value:"DJI" }, { label:"Algeria",value:"DZA" }, { label:"Egypt",value:"EGY" }, { label:"Eritrea",value:"ERI" }, { label:"Ethiopia",value:"ETH" }, { label:"Gabon",value:"GAB" }, { label:"Ghana",value:"GHA" }, { label:"Guinea",value:"GIN" }, { label:"The Gambia",value:"GMB" }, { label:"Guinea-Bissau",value:"GNB" }, { label:"Equatorial Guinea",value:"GNQ" }, { label:"Kenya",value:"KEN" }, { label:"Liberia",value:"LBR" }, { label:"Libya",value:"LBY" }, { label:"Lesotho",value:"LSO" }, { label:"Morocco",value:"MAR" }, { label:"Mali",value:"MLI" }, { label:"Mozambique",value:"MOZ" }, { label:"Mauritania",value:"MRT" }, { label:"Malawi",value:"MWI" }, { label:"Namibia",value:"NAM" }, { label:"Niger",value:"NER" }, { label:"Nigeria",value:"NGA" }, { label:"Rwanda",value:"RWA" }, { label:"Sudan",value:"SDN" }, { label:"Senegal",value:"SEN" }, { label:"Sierra Leone",value:"SLE" }, { label:"Somalia",value:"SOM" }, { label:"South Sudan",value:"SSD" }, { label:"Sao Tome and Principe",value:"STP" }, { label:"Kingdom of Eswatini",value:"SWZ" }, { label:"Chad",value:"TCD" }, { label:"Togo",value:"TGO" }, { label:"Tunisia",value:"TUN" }, { label:"Tanzania",value:"TZA" }, { label:"Uganda",value:"UGA" }, { label:"South Africa",value:"ZAF" }, { label:"Zambia",value:"ZMB" }, { label:"Zimbabwe",value:"ZWE" }];
+
 //// Basic setting of the map
 class Application extends React.Component {
   constructor(props) {
@@ -179,7 +137,9 @@ componentDidMount() {
         });
 
       this.map.on('click', 'country_labels', function(e) {
-      console.log(e.features[0].properties.name_en)
+      //this.setState({ selectedOption: e.features[0].properties.name_en})
+      //console.log(e.features[0].properties.code)
+      console.log(getCountryISO3(e.features[0].properties.code))
       });
 
 
