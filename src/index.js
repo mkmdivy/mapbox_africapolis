@@ -103,10 +103,10 @@ componentDidMount() {
             source:'africapolis_country',
             type: 'fill',
             'source-layer':'AfricaContinent',
-            //filter:[">","Population_2015",0],
+            //filter:["==","Region_ID",1],
             paint: {
               'fill-color': '#fdfdf5',
-              'fill-opacity': 1
+              'fill-opacity': 0.5
             }
         });
 
@@ -174,7 +174,10 @@ componentDidMount() {
               console.log(ISO2toID_f(e.features[0].properties.code))
             });
 
-
+        this.map.on('click', 'region_labels', e =>  {
+              this.setState({ selectedOption: {value: e.features[0].properties.Region_ID, label:e.features[0].properties.Name , region: "Yes"  } })
+              console.log(e.features[0].properties.Region_ID)
+            });
 
     });
 
@@ -184,21 +187,30 @@ componentDidUpdate(prevProps, prevState) {
     if( prevState.selectedOption !== this.state.selectedOption ) {
       console.log(this.state.selectedOption, prevState.selectedOption);
       this.remove('country');
-      this.add_shape('country',this.state.selectedOption.value);
       this.remove('agglomerations');
-      this.add_point('agglomerations',this.state.selectedOption.value);
-    }
+
+      if (this.state.selectedOption.region)
+      {
+        this.add_shape('country',["==","Region_ID",this.state.selectedOption.value]);
+        this.add_point('agglomerations',["==","Region_ID",this.state.selectedOption.value]);
+      }
+      else
+      {
+        this.add_shape('country',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)]);
+        this.add_point('agglomerations',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)]);
+      }
+  }
 }
 remove = obj => {
     this.map.removeLayer(obj)
 }
-add_point = (obj,country) => {
+add_point = (obj,filter1) => {
     this.map.addLayer({
         id: obj,
         source:'africapolis_agglos',
         type: 'circle',
         'source-layer':'africapolis2020-3mv6ux',
-        filter:["all",["==","ISO3",IDtoISO3_f(country)],[">","Population_2015",0]],
+        filter:["all",filter1,[">","Population_2015",0]],
         paint: {
         'circle-stroke-color': agglomeration_stroke_color,
         'circle-stroke-width': 3,
@@ -206,21 +218,22 @@ add_point = (obj,country) => {
         }
     });
 }
-add_shape = (obj,country) => {
+add_shape = (obj,filter1) => {
     this.map.addLayer({
         id: obj,
         source:'africapolis_country',
         type: 'fill',
         'source-layer':'AfricaContinent',
-        filter:["==","ISO3",IDtoISO3_f(country)],
+        filter:filter1,
         paint: {
           'fill-color': '#fdfdf5',
           'fill-opacity': 1
         }
     });
     //console.log(this.map.getSource("africapolis_country"))
-    this.map.fitBounds(getCountryBound(country))
+    this.map.fitBounds(getCountryBound(this.state.selectedOption.value))
 }
+
 render() {
     const { selectedOption } = this.state;
     return (
