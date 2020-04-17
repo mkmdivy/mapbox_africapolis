@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import mapboxgl from 'mapbox-gl';
 import axios from 'axios';
 import Select from 'react-select';
+import { Slider, Handles, Tracks } from 'react-compound-slider';
 //// Access token for Africapolis mapbox account
 mapboxgl.accessToken = 'pk.eyJ1IjoibWttZCIsImEiOiJjajBqYjJpY2owMDE0Mndsbml0d2V1ZXczIn0.el8wQmA-TSJp2ggX8fJ1rA';
+
 
 
 const ISO2toID = {AO:1, BI:2, BJ:3, BF:4, BW:5, CF:6, CI:7, CM:8, CD:9, CG:10, CV:11, DJ:12, DZ:13, EG:14, ER:15, ET:16, GA:17, GH:18, GN:19, GM:20, GW:21, GQ:22, KE:23, LR:24, LY:25, LS:26, MA:27, ML:28, MZ:29, MR:30, MW:31, NA:32, NE:33, NG:34, RW:35, SD:36, SN:37, SL:38, SO:39, SS:40, ST:41, SZ:42, TD:43, TG:44, TN:45, TZ:46, UG:47, ZA:48, ZM:49, ZW:50}
@@ -140,12 +142,13 @@ componentDidMount() {
               'text-font': [ "Helvetica Neue LT Std 75 Bold", "Arial Unicode MS Regular"],
               'text-size': ["interpolate", ["linear"], ["zoom"], 2, ["step", ["get", "scalerank"], 10, 3, 8, 5, 5 ], 9, ["step", ["get", "scalerank"], 35, 3, 27, 5, 22 ] ],
 
-              //'text-color':'#FFFF00'
+              //
                 //'circle-stroke-color': agglomeration_stroke_color,
                 //'circle-stroke-width': 3,
                 //'circle-color': agglomeration_fill_color
             },
-            paint:{'text-opacity':[ "step",["zoom"],  0,  3,  1,  22,  1]}
+            paint:{'text-opacity':[ "step",["zoom"],  0,  3,  1,  22,  1],
+                   'text-color':['case',['boolean', ['feature-state', 'hover'], false],"hsl(60,100%,50%)","hsl(0, 100%, 0%)"]}
         });
 
         this.map.addLayer({
@@ -161,8 +164,8 @@ componentDidMount() {
                   //'circle-stroke-width': 3,
                   //'circle-color': agglomeration_fill_color
               },
-              paint:{'text-color':"hsl(0, 0%, 100%)",
-                     'text-halo-color':"hsl(0, 0%, 0%)",
+              paint:{'text-color':['case',['boolean', ['feature-state', 'hover'], false],"hsl(0, 0%, 100%)", "hsl(60,100%,50%)"],
+                     'text-halo-color': "hsl(0, 0%, 0%)",
                      'text-halo-width': 3,
                     'text-opacity':[ "step",["zoom"],  1,  3,  0,  22,  0]
               }
@@ -175,10 +178,38 @@ componentDidMount() {
             });
 
         this.map.on('click', 'region_labels', e =>  {
-              this.setState({ selectedOption: {value: e.features[0].properties.Region_ID, label:e.features[0].properties.Name , region: "Yes"  } })
-              console.log(e.features[0].properties.Region_ID)
+                    this.setState({ selectedOption: {value: e.features[0].properties.Region_ID, label:e.features[0].properties.Name , region: "Yes"  } })
+                    console.log(e.features[0].properties.Region_ID)
+                  });
+
+
+var hoveredID=null;
+        this.map.on('mouseenter', 'country_labels', e =>  {
+          console.log(e.features.length)
+          if (e.features.length > 0) {
+                if (hoveredID) {
+                    this.map.setFeatureState(
+                    { source: 'africapolis_country_label', id:hoveredID, sourceLayer:'country_label' },
+                    { hover: false }
+                    );
+                    }
+                hoveredID = e.features[0].id;
+                this.map.setFeatureState(
+                { source: 'africapolis_country_label', id:hoveredID, sourceLayer:'country_label' },
+                { hover: true }
+                );
+                }
             });
 
+        this.map.on('mouseleave', 'country_labels', e =>  {
+          if (hoveredID) {
+                      this.map.setFeatureState(
+                      { source: 'africapolis_country_label', id:hoveredID, sourceLayer:'country_label' },
+                      { hover: false }
+                      );
+                    }
+                    hoveredID = null;
+                });
     });
 
 
