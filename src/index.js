@@ -91,7 +91,7 @@ componentDidMount() {
 //// Import Africapolis agglomerations from mapbox
     this.map.on('load', () => {
 // Add Country shape
-      this.map.addSource('africapolis_country', { type: 'vector', url: 'mapbox://mkmd.ck19bzbfg07z42tmz06bk8soe-6dzi4'});
+      this.map.addSource('africapolis_country', { type: 'vector', url: 'mapbox://mkmd.5xeh701b'});
 // Add Agglomerations
       this.map.addSource('africapolis_agglos', { type: 'vector', url: 'mapbox://mkmd.3e0rk98j'});
 // Add Country label
@@ -104,7 +104,7 @@ componentDidMount() {
             id: 'country',
             source:'africapolis_country',
             type: 'fill',
-            'source-layer':'AfricaContinent',
+            'source-layer':'africacontinent_complete-ays128',
             //filter:["==","Region_ID",1],
             paint: {
               'fill-color': '#fdfdf5',
@@ -148,7 +148,7 @@ componentDidMount() {
                 //'circle-color': agglomeration_fill_color
             },
             paint:{'text-opacity':[ "step",["zoom"],  0,  3,  1,  22,  1],
-                   'text-color':['case',['boolean', ['feature-state', 'hover'], false],"hsl(60,100%,50%)","hsl(0, 100%, 0%)"]}
+                   'text-color':['case',['boolean', ['feature-state', 'hover'], false],"hsl(60,100%,50%)","#6d6d6f"]}
         });
 
         this.map.addLayer({
@@ -164,7 +164,7 @@ componentDidMount() {
                   //'circle-stroke-width': 3,
                   //'circle-color': agglomeration_fill_color
               },
-              paint:{'text-color':['case',['boolean', ['feature-state', 'hover'], false],"hsl(0, 0%, 100%)", "hsl(60,100%,50%)"],
+              paint:{'text-color':['case',['boolean', ['feature-state', 'hover'], false], "hsl(60,100%,50%)","hsl(0, 0%, 100%)"],
                      'text-halo-color': "hsl(0, 0%, 0%)",
                      'text-halo-width': 3,
                     'text-opacity':[ "step",["zoom"],  1,  3,  0,  22,  0]
@@ -174,12 +174,11 @@ componentDidMount() {
 
         this.map.on('click', 'country_labels', e =>  {
               this.setState({ selectedOption: {value: ISO2toID_f(e.features[0].properties.code), label: e.features[0].properties.name_en  } })
-              console.log(ISO2toID_f(e.features[0].properties.code))
+              this.map.fitBounds(getCountryBound(this.state.selectedOption.value))
             });
 
         this.map.on('click', 'region_labels', e =>  {
                     this.setState({ selectedOption: {value: e.features[0].properties.Region_ID, label:e.features[0].properties.Name , region: "Yes"  } })
-                    console.log(e.features[0].properties.Region_ID)
                   });
 
 
@@ -210,6 +209,37 @@ var hoveredID=null;
                     }
                     hoveredID = null;
                 });
+
+
+        this.map.on('mouseenter', 'region_labels', e =>  {
+          console.log(e.features.length)
+          if (e.features.length > 0) {
+                if (hoveredID) {
+                    this.map.setFeatureState(
+                    { source: 'africapolis_region_label', id:hoveredID, sourceLayer:'Region' },
+                    { hover: false }
+                    );
+                    }
+                hoveredID = e.features[0].id;
+                this.map.setFeatureState(
+                { source: 'africapolis_region_label', id:hoveredID, sourceLayer:'Region' },
+                { hover: true }
+                );
+                }
+            });
+
+        this.map.on('mouseleave', 'region_labels', e =>  {
+          if (hoveredID) {
+                      this.map.setFeatureState(
+                      { source: 'africapolis_region_label', id:hoveredID, sourceLayer:'Region' },
+                      { hover: false }
+                      );
+                    }
+                    hoveredID = null;
+                });
+
+
+
     });
 
 
@@ -254,7 +284,7 @@ add_shape = (obj,filter1) => {
         id: obj,
         source:'africapolis_country',
         type: 'fill',
-        'source-layer':'AfricaContinent',
+        'source-layer':'africacontinent_complete-ays128',
         filter:filter1,
         paint: {
           'fill-color': '#fdfdf5',
@@ -262,7 +292,7 @@ add_shape = (obj,filter1) => {
         }
     });
     //console.log(this.map.getSource("africapolis_country"))
-    this.map.fitBounds(getCountryBound(this.state.selectedOption.value))
+
 }
 
 render() {
@@ -275,6 +305,11 @@ render() {
                 value={selectedOption}
                 onChange={(value) => this.setState({ selectedOption: value}) }
                 options={options}
+              />
+        <Slider
+                //rootStyle={sliderStyle}
+                domain={[0, 100]} // [min, max]
+                values={[20, 60, 80]} // slider values
               />
                 </div>
       </div>
