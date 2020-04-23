@@ -288,7 +288,7 @@ add_shape = (obj,filter1) => {
         filter:filter1,
         paint: {
           'fill-color': '#fdfdf5',
-          'fill-opacity': 1
+          'fill-opacity': ["step", ["zoom"], 0.3, 6, 0] //8.5
         }
     });
     //console.log(this.map.getSource("africapolis_country"))
