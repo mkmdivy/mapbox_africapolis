@@ -20,6 +20,8 @@ const countryBound = {1:[[ 11.67880883351409,-18.0395441112506],[24.082763514669
 function ISO2toID_f(countryCode) { return ISO2toID[countryCode] }
 function IDtoISO3_f(countryCode) { return ID2toISO3[countryCode] }
 function getCountryBound(countryCode) { return countryBound[countryCode] }
+function getKeyByValue(object, value) { return Object.keys(object).find(key => object[key] === value);}
+
 
 const agglomeration_fill_color =[
   "step",
@@ -77,7 +79,7 @@ componentDidMount() {
 
      this.map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mkmd/ck88rk21s2ep51jpjjnyz9o3p', /// Select mapstyle from mapbox studio
+      style: 'mapbox://styles/mkmd/ck9eg99c72gwg1imtdbugc9yn', /// Select mapstyle from mapbox studio
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom
     });
@@ -95,7 +97,7 @@ componentDidMount() {
 // Add Agglomerations
       this.map.addSource('africapolis_agglos', { type: 'vector', url: 'mapbox://mkmd.3e0rk98j'});
 // Add Country label
-      this.map.addSource('africapolis_country_label', { type: 'vector', url: 'mapbox://mapbox.mapbox-streets-v7'});
+      this.map.addSource('africapolis_country_label', { type: 'vector', url: 'mapbox://mkmd.6v0ckax4'});
 // Add Region labelled
       this.map.addSource('africapolis_region_label', { type: 'vector', url: 'mapbox://mkmd.ck91uxg28274q2voaakwaxzcg-4g4fr'});
 
@@ -108,7 +110,7 @@ componentDidMount() {
             //filter:["==","Region_ID",1],
             paint: {
               'fill-color': '#fdfdf5',
-              'fill-opacity': 0.5
+              'fill-opacity': 0.2
             }
         });
 
@@ -135,10 +137,10 @@ componentDidMount() {
             id: 'country_labels',
             source:'africapolis_country_label',
             type: 'symbol',
-            'source-layer':'country_label',
-            filter:["all", ["in", "$type", "Polygon", "LineString", "Point" ], ["all", ["in", "code", "AO", "BF", "BI", "BJ", "BW", "CD", "CF", "CG", "CI", "CM", "CV", "DJ", "DZ", "EG", "ER", "ET", "GA", "GH", "GM", "GN", "GQ", "GW", "KE", "LR", "LS", "LY", "MA", "ML", "MR", "MW", "MZ", "NA", "NE", "NG", "RW", "SD", "SL", "SN", "SO", "SS", "ST", "SZ", "TD", "TG", "TN", "TZ", "UG", "ZA", "ZM", "ZW" ] ] ],
+            'source-layer':'OECD_countryname-0ogi2f',
+            filter:[ "all", [ "match", ["get", "ISO3_CODE"], [ "AGO", "BDI", "BEN", "BFA", "BWA", "CAF", "CIV", "CMR", "COD", "COG", "CPV", "DJI", "DZA", "EGY", "ERI", "ETH", "GAB", "GHA", "GIN", "GMB", "GNB", "GNQ", "KEN", "LBR", "LBY", "LSO", "MAR", "MLI", "MOZ", "MRT", "MWI", "NAM", "NER", "NGA", "RWA", "SDN", "SEN", "SLE", "SOM", "SSD", "STP", "SWZ", "TCD", "TGO", "TUN", "TZA", "UGA", "ZAF", "ZMB", "ZWE","MDG", "SYC", "COM" ], true, false ]],
             layout: {
-              'text-field':["get","name_en"],
+              'text-field':["get","NAME_EN"],
               'text-font': [ "Helvetica Neue LT Std 75 Bold", "Arial Unicode MS Regular"],
               'text-size': ["interpolate", ["linear"], ["zoom"], 2, ["step", ["get", "scalerank"], 10, 3, 8, 5, 5 ], 9, ["step", ["get", "scalerank"], 35, 3, 27, 5, 22 ] ],
 
@@ -148,7 +150,9 @@ componentDidMount() {
                 //'circle-color': agglomeration_fill_color
             },
             paint:{'text-opacity':[ "step",["zoom"],  0,  3,  1,  22,  1],
-                   'text-color':['case',['boolean', ['feature-state', 'hover'], false],"hsl(60,100%,50%)","#6d6d6f"]}
+                   'text-color':['case',['boolean', ['feature-state', 'hover'], false],"hsl(0,0%,0%)","#6d6d6f"],
+                   'text-halo-color': "hsl(0, 0%, 100%)",
+                   'text-halo-width': 1.25}
         });
 
         this.map.addLayer({
@@ -173,28 +177,34 @@ componentDidMount() {
 
 
         this.map.on('click', 'country_labels', e =>  {
-              this.setState({ selectedOption: {value: ISO2toID_f(e.features[0].properties.code), label: e.features[0].properties.name_en  } })
+              if(e.features[0].layer.paint["text-opacity"] === 1)
+            {
+              this.setState({ selectedOption: {value: getKeyByValue(ID2toISO3,e.features[0].properties.ISO3_CODE), label: e.features[0].properties.NAME_EN  } })
               this.map.fitBounds(getCountryBound(this.state.selectedOption.value))
+            }
+
             });
 
         this.map.on('click', 'region_labels', e =>  {
+              if(e.features[0].layer.paint["text-opacity"] === 1)
+              {
                     this.setState({ selectedOption: {value: e.features[0].properties.Region_ID, label:e.features[0].properties.Name , region: "Yes"  } })
+              }
                   });
 
 
 var hoveredID=null;
         this.map.on('mouseenter', 'country_labels', e =>  {
-          console.log(e.features.length)
           if (e.features.length > 0) {
                 if (hoveredID) {
                     this.map.setFeatureState(
-                    { source: 'africapolis_country_label', id:hoveredID, sourceLayer:'country_label' },
+                    { source: 'africapolis_country_label', id:hoveredID, sourceLayer:'OECD_countryname-0ogi2f' },
                     { hover: false }
                     );
                     }
                 hoveredID = e.features[0].id;
                 this.map.setFeatureState(
-                { source: 'africapolis_country_label', id:hoveredID, sourceLayer:'country_label' },
+                { source: 'africapolis_country_label', id:hoveredID, sourceLayer:'OECD_countryname-0ogi2f' },
                 { hover: true }
                 );
                 }
@@ -203,7 +213,7 @@ var hoveredID=null;
         this.map.on('mouseleave', 'country_labels', e =>  {
           if (hoveredID) {
                       this.map.setFeatureState(
-                      { source: 'africapolis_country_label', id:hoveredID, sourceLayer:'country_label' },
+                      { source: 'africapolis_country_label', id:hoveredID, sourceLayer:'OECD_countryname-0ogi2f' },
                       { hover: false }
                       );
                     }
@@ -288,7 +298,7 @@ add_shape = (obj,filter1) => {
         filter:filter1,
         paint: {
           'fill-color': '#fdfdf5',
-          'fill-opacity': ["step", ["zoom"], 0.3, 6, 0] //8.5
+          'fill-opacity': ["interpolate",["linear"],["zoom"], 0,1,5,0] //8.5
         }
     });
     //console.log(this.map.getSource("africapolis_country"))
