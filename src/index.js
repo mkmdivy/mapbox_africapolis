@@ -8,7 +8,54 @@ import { Slider, Handles, Tracks } from 'react-compound-slider';
 mapboxgl.accessToken = 'pk.eyJ1IjoibWttZCIsImEiOiJjajBqYjJpY2owMDE0Mndsbml0d2V1ZXczIn0.el8wQmA-TSJp2ggX8fJ1rA';
 
 
+/////////////// Slider
+export function Handle({
+  handle: { id, value, percent },
+  getHandleProps
+}) {
+  return (
+    <div
+      style={{
+        left: `${percent}%`,
+        position: 'absolute',
+        marginLeft: -15,
+        marginTop: 25,
+        zIndex: 2,
+        width: 30,
+        height: 30,
+        border: 0,
+        textAlign: 'center',
+        cursor: 'pointer',
+        borderRadius: '50%',
+        backgroundColor: '#2C4870',
+        color: '#333',
+      }}
+      {...getHandleProps(id)}
+    >
+      <div style={{ fontFamily: 'Roboto', fontSize: 11, marginTop: -15 }}>
+        {value}
+      </div>
+    </div>
+  )
+}
 
+const sliderStyle = {  // Give the slider some width
+  position: 'relative',
+  width: '30%',
+  height: 50
+}
+
+const railStyle = {
+  position: 'absolute',
+  width: '100%',
+  height: 10,
+  marginTop: 35,
+  borderRadius: 5,
+  backgroundColor: '#8B9CB6',
+}
+
+
+//////////////////
 const ISO2toID = {AO:1, BI:2, BJ:3, BF:4, BW:5, CF:6, CI:7, CM:8, CD:9, CG:10, CV:11, DJ:12, DZ:13, EG:14, ER:15, ET:16, GA:17, GH:18, GN:19, GM:20, GW:21, GQ:22, KE:23, LR:24, LY:25, LS:26, MA:27, ML:28, MZ:29, MR:30, MW:31, NA:32, NE:33, NG:34, RW:35, SD:36, SN:37, SL:38, SO:39, SS:40, ST:41, SZ:42, TD:43, TG:44, TN:45, TZ:46, UG:47, ZA:48, ZM:49, ZW:50}
 
 const ID2toISO3 ={1:"AGO",2:"BDI",3:"BEN",4:"BFA",5:"BWA",6:"CAF",7:"CIV",8:"CMR",9:"COD",10:"COG",11:"CPV",12:"DJI",13:"DZA",14:"EGY",15:"ERI",16:"ETH",17:"GAB",18:"GHA",19:"GIN",20:"GMB",21:"GNB",22:"GNQ",23:"KEN",24:"LBR",25:"LBY",26:"LSO",27:"MAR",28:"MLI",29:"MOZ",30:"MRT",31:"MWI",32:"NAM",33:"NER",34:"NGA",35:"RWA",36:"SDN",37:"SEN",38:"SLE",39:"SOM",40:"SSD",41:"STP",42:"SWZ",43:"TCD",44:"TGO",45:"TUN",46:"TZA",47:"UGA",48:"ZAF",49:"ZMB",50:"ZWE"}
@@ -71,7 +118,9 @@ class Application extends React.Component {
       lng: 5,
       lat: 0,
       zoom: 3,
-      selectedOption: {label: '', value: ''}
+      selectedOption: {label: 'Africa', value: ''},
+      values:2015,
+      update:[2015]
     };
   }
 componentDidMount() {
@@ -99,7 +148,7 @@ componentDidMount() {
 // Add Country label
       this.map.addSource('africapolis_country_label', { type: 'vector', url: 'mapbox://mkmd.6v0ckax4'});
 // Add Region labelled
-      this.map.addSource('africapolis_region_label', { type: 'vector', url: 'mapbox://mkmd.ck91uxg28274q2voaakwaxzcg-4g4fr'});
+      this.map.addSource('africapolis_region_label', { type: 'vector', url: 'mapbox://mkmd.3yut44ue'});
 
 // Add Country layer
       this.map.addLayer({
@@ -159,7 +208,7 @@ componentDidMount() {
               id: 'region_labels',
               source:'africapolis_region_label',
               type: 'symbol',
-              'source-layer':'Region',
+              'source-layer':'region-78kdxj',
               layout: {
                 'text-field':["to-string", ["get", "Name"]],
                 'text-font': [ "Helvetica Neue LT Std 75 Bold", "Arial Unicode MS Regular"],
@@ -190,6 +239,14 @@ componentDidMount() {
               {
                     this.setState({ selectedOption: {value: e.features[0].properties.Region_ID, label:e.features[0].properties.Name , region: "Yes"  } })
               }
+                  });
+
+        this.map.on('click', 'agglomerations', e =>  {
+              //if(e.features[0].layer.paint["text-opacity"] === 1)
+            //  {
+                console.log(e.features[0].properties)
+                    this.setState({ selectedOption: {value: e.features[0].properties.Country_ID, label:e.features[0].properties.Agglomeration_Name , agglomeration: "Yes"  } })
+              //}
                   });
 
 
@@ -226,13 +283,13 @@ var hoveredID=null;
           if (e.features.length > 0) {
                 if (hoveredID) {
                     this.map.setFeatureState(
-                    { source: 'africapolis_region_label', id:hoveredID, sourceLayer:'Region' },
+                    { source: 'africapolis_region_label', id:hoveredID, sourceLayer:'region-78kdxj' },
                     { hover: false }
                     );
                     }
                 hoveredID = e.features[0].id;
                 this.map.setFeatureState(
-                { source: 'africapolis_region_label', id:hoveredID, sourceLayer:'Region' },
+                { source: 'africapolis_region_label', id:hoveredID, sourceLayer:'region-78kdxj' },
                 { hover: true }
                 );
                 }
@@ -241,7 +298,7 @@ var hoveredID=null;
         this.map.on('mouseleave', 'region_labels', e =>  {
           if (hoveredID) {
                       this.map.setFeatureState(
-                      { source: 'africapolis_region_label', id:hoveredID, sourceLayer:'Region' },
+                      { source: 'africapolis_region_label', id:hoveredID, sourceLayer:'region-78kdxj' },
                       { hover: false }
                       );
                     }
@@ -255,37 +312,94 @@ var hoveredID=null;
 
 }
 componentDidUpdate(prevProps, prevState) {
-    if( prevState.selectedOption !== this.state.selectedOption ) {
-      console.log(this.state.selectedOption, prevState.selectedOption);
+    if( prevState.selectedOption !== this.state.selectedOption || prevState.update[0] !== this.state.update[0]) {
+      //console.log(this.state.selectedOption, prevState.selectedOption);
       this.remove('country');
       this.remove('agglomerations');
-
-      if (this.state.selectedOption.region)
+      if (this.state.selectedOption.label === "Africa")
+      {
+        this.add_shape('country',[">","Region_ID",0]);
+        this.add_point('agglomerations',[">","Region_ID",0],[">","Population_"+this.state.update[0],10000],this.state.update[0]);
+      }
+      else if (this.state.selectedOption.region)
       {
         this.add_shape('country',["==","Region_ID",this.state.selectedOption.value]);
-        this.add_point('agglomerations',["==","Region_ID",this.state.selectedOption.value]);
+        this.add_point('agglomerations',["==","Region_ID",this.state.selectedOption.value],[">","Population_"+this.state.update[0],0],this.state.update[0]);
+      }
+      else if (this.state.selectedOption.agglomeration)
+      {
+        this.add_shape('country',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)]);
+        this.add_point('agglomerations',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)],[">","Population_"+this.state.update[0],0],this.state.update[0]);
       }
       else
       {
         this.add_shape('country',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)]);
-        this.add_point('agglomerations',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)]);
+        this.add_point('agglomerations',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)],[">","Population_"+this.state.update[0],0],this.state.update[0]);
       }
   }
+
+    // if(prevState.update !== this.state.update)
+    // {console.log(this.state.update[0])}
 }
+
+onUpdate = update => {
+  this.setState({ update })
+}
+
+onChange = values => {
+  this.setState({ values })
+}
+
 remove = obj => {
     this.map.removeLayer(obj)
 }
-add_point = (obj,filter1) => {
+add_point = (obj,filter1,filter2,filter3) => {
     this.map.addLayer({
         id: obj,
         source:'africapolis_agglos',
         type: 'circle',
         'source-layer':'africapolis2020-3mv6ux',
-        filter:["all",filter1,[">","Population_2015",0]],
+        filter:["all",filter1,filter2],
         paint: {
-        'circle-stroke-color': agglomeration_stroke_color,
+        'circle-stroke-color': [
+          "step",
+          ["get", "Population_"+filter3],
+          "hsla(0, 0%, 8%, 1)",
+          10000,
+          "hsla(55, 30%, 93%, 1)",
+          30000,
+          "hsla(60, 100%, 90%, 1)",
+          100000,
+          "hsla(98, 55%, 81%, 1)",
+          300000,
+          "hsla(166, 44%, 65%, 1)",
+          1000000,
+          "hsla(186, 53%, 51%, 1)",
+          2000000,
+          "hsla(197, 74%, 43%, 1)",
+          11847635,
+          "hsla(197, 74%, 43%, 1)"
+         ],
         'circle-stroke-width': 3,
-        'circle-color': agglomeration_fill_color
+        'circle-color': [
+          "step",
+          ["get", "Population_"+filter3],
+          "hsla(0, 0%, 8%, 0.5)",
+          10000,
+          "hsla(55, 30%, 93%, 0.5)",
+          30000,
+          "hsla(60, 100%, 90%, 0.5)",
+          100000,
+          "hsla(98, 55%, 81%, 0.5)",
+          300000,
+          "hsla(166, 44%, 65%, 0.5)",
+          1000000,
+          "hsla(186, 53%, 51%, 0.5)",
+          2000000,
+          "hsla(197, 74%, 43%, 0.5)",
+          11847635,
+          "hsla(197, 74%, 43%, 0.5)"
+         ]
         }
     });
 }
@@ -311,16 +425,36 @@ render() {
       <div>
         <div>Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}</div>
         <div ref={el => this.mapContainer = el} className="mapContainer" >
+        <Slider
+                mode={1}
+                rootStyle={sliderStyle}
+                domain={[1950, 2015]} // [min, max]
+                values={[2015]} // slider values
+                step={10}
+                onUpdate={this.onUpdate}
+                onChange={this.onChange}
+              >
+                <div style={railStyle /* Add a rail as a child.  Later we'll make it interactive. */} />
+                <Handles>
+                {({ handles, getHandleProps }) => (
+                  <div className="slider-handles">
+                    {handles.map(handle => (
+                      <Handle
+                        key={handle.id}
+                        handle={handle}
+                        getHandleProps={getHandleProps}
+                      />
+                    ))}
+                  </div>
+                )}
+                </Handles>
+        </Slider>
         <Select
                 value={selectedOption}
                 onChange={(value) => this.setState({ selectedOption: value}) }
                 options={options}
               />
-        <Slider
-                //rootStyle={sliderStyle}
-                domain={[0, 100]} // [min, max]
-                values={[20, 60, 80]} // slider values
-              />
+
                 </div>
       </div>
     )
