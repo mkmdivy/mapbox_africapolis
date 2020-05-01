@@ -4,8 +4,13 @@ import mapboxgl from 'mapbox-gl';
 import axios from 'axios';
 import Select from 'react-select';
 import { Slider, Handles, Tracks } from 'react-compound-slider';
+import './component/legend.css';
+
 //// Access token for Africapolis mapbox account
 mapboxgl.accessToken = 'pk.eyJ1IjoibWttZCIsImEiOiJjajBqYjJpY2owMDE0Mndsbml0d2V1ZXczIn0.el8wQmA-TSJp2ggX8fJ1rA';
+
+
+
 
 
 /////////////// Slider
@@ -84,7 +89,7 @@ const agglomeration_fill_color =[
   "hsla(166, 44%, 65%, 0.5)",
   1000000,
   "hsla(186, 53%, 51%, 0.5)",
-  2000000,
+  3000000,
   "hsla(197, 74%, 43%, 0.5)",
   11847635,
   "hsla(197, 74%, 43%, 0.5)"
@@ -103,7 +108,7 @@ const agglomeration_fill_color =[
   "hsla(166, 44%, 65%, 1)",
   1000000,
   "hsla(186, 53%, 51%, 1)",
-  2000000,
+  3000000,
   "hsla(197, 74%, 43%, 1)",
   11847635,
   "hsla(197, 74%, 43%, 1)"
@@ -120,7 +125,8 @@ class Application extends React.Component {
       zoom: 3,
       selectedOption: {label: 'Africa', value: ''},
       values:2015,
-      update:[2015]
+      update:[2015],
+      c1:true,c2:true,c3:true,c4:true,c5:true,c6:true
     };
   }
 componentDidMount() {
@@ -132,13 +138,25 @@ componentDidMount() {
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom
     });
-    this.map.on('move', () => {
-      this.setState({
-      lng: this.map.getCenter().lng.toFixed(4),
-      lat: this.map.getCenter().lat.toFixed(4),
-      zoom: this.map.getZoom().toFixed(2)
-      });
-    });
+    // this.map.on('move', () => {
+    //   this.setState({
+    //   lng: this.map.getCenter().lng.toFixed(4),
+    //   lat: this.map.getCenter().lat.toFixed(4),
+    //   zoom: this.map.getZoom().toFixed(2)
+    //   });
+    // });
+
+    document
+        .getElementById('listing-group')
+        .addEventListener('change', function(e) {
+        console.log(e.target)
+        var handler = e.target.id;
+        if (e.target.checked) {
+          console.log("a")
+        } else {
+          console.log("b")
+        }
+        });
 //// Import Africapolis agglomerations from mapbox
     this.map.on('load', () => {
 // Add Country shape
@@ -312,7 +330,9 @@ var hoveredID=null;
 
 }
 componentDidUpdate(prevProps, prevState) {
-    if( prevState.selectedOption !== this.state.selectedOption || prevState.update[0] !== this.state.update[0]) {
+    //if( prevState.selectedOption !== this.state.selectedOption || prevState.update[0] !== this.state.update[0]) {
+    if( prevState !== this.state) {
+
       //console.log(this.state.selectedOption, prevState.selectedOption);
       this.remove('country');
       this.remove('agglomerations');
@@ -336,6 +356,8 @@ componentDidUpdate(prevProps, prevState) {
         this.add_shape('country',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)]);
         this.add_point('agglomerations',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)],[">","Population_"+this.state.update[0],0],this.state.update[0]);
       }
+      this.map.moveLayer('country_labels')
+      this.map.moveLayer('region_labels')
   }
 
     // if(prevState.update !== this.state.update)
@@ -350,16 +372,40 @@ onChange = values => {
   this.setState({ values })
 }
 
+onFilter = filters => {
+  this.setState({[filters.target.id]: !this.state[filters.target.id]});
+}
+
 remove = obj => {
     this.map.removeLayer(obj)
 }
+
+agglos_class = filter3 => {
+var filterclass=["any"];
+//c1=null; c2=null; c3=null; c4=null; c5=null; c6=null;
+if (this.state.c1)
+{filterclass.push(["all",[">=","Population_"+filter3,10000],["<","Population_"+filter3,30000]])}
+if (this.state.c2)
+{filterclass.push(["all",[">=","Population_"+filter3,30000],["<","Population_"+filter3,100000]])}
+if (this.state.c3)
+{filterclass.push(["all",[">=","Population_"+filter3,100000],["<","Population_"+filter3,300000]])}
+if (this.state.c4)
+{filterclass.push(["all",[">=","Population_"+filter3,300000],["<","Population_"+filter3,1000000]])}
+if (this.state.c5)
+{filterclass.push(["all",[">=","Population_"+filter3,1000000],["<","Population_"+filter3,3000000]])}
+if (this.state.c6)
+{filterclass.push(["all",[">=","Population_"+filter3,3000000],["<","Population_"+filter3,11847636]])}
+return filterclass
+}
+
+
 add_point = (obj,filter1,filter2,filter3) => {
     this.map.addLayer({
         id: obj,
         source:'africapolis_agglos',
         type: 'circle',
         'source-layer':'africapolis2020-3mv6ux',
-        filter:["all",filter1,filter2],
+        filter:["all",filter1,filter2,this.agglos_class(this.state.update[0])],
         paint: {
         'circle-stroke-color': [
           "step",
@@ -375,7 +421,7 @@ add_point = (obj,filter1,filter2,filter3) => {
           "hsla(166, 44%, 65%, 1)",
           1000000,
           "hsla(186, 53%, 51%, 1)",
-          2000000,
+          3000000,
           "hsla(197, 74%, 43%, 1)",
           11847635,
           "hsla(197, 74%, 43%, 1)"
@@ -395,13 +441,15 @@ add_point = (obj,filter1,filter2,filter3) => {
           "hsla(166, 44%, 65%, 0.5)",
           1000000,
           "hsla(186, 53%, 51%, 0.5)",
-          2000000,
+          3000000,
           "hsla(197, 74%, 43%, 0.5)",
           11847635,
           "hsla(197, 74%, 43%, 0.5)"
          ]
         }
-    });
+    }
+  // layer order
+  );
 }
 add_shape = (obj,filter1) => {
     this.map.addLayer({
@@ -414,7 +462,9 @@ add_shape = (obj,filter1) => {
           'fill-color': '#fdfdf5',
           'fill-opacity': ["interpolate",["linear"],["zoom"], 0,1,5,0] //8.5
         }
-    });
+    }
+   // layer order
+  );
     //console.log(this.map.getSource("africapolis_country"))
 
 }
@@ -424,6 +474,7 @@ render() {
     return (
       <div>
         <div>Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}</div>
+
         <div ref={el => this.mapContainer = el} className="mapContainer" >
         <Slider
                 mode={1}
@@ -454,8 +505,21 @@ render() {
                 onChange={(value) => this.setState({ selectedOption: value}) }
                 options={options}
               />
-
                 </div>
+                <nav id="listing-group" class="listing-group">
+                <input type="checkbox" id="c1" checked={this.state.c1} onChange={this.onFilter} />
+                <label for="c1">10 000 - 30 000</label>
+                <input type="checkbox" id="c2" checked={this.state.c2} onChange={this.onFilter} />
+                <label for="c2">30 000 - 100 000</label>
+                <input type="checkbox" id="c3" checked={this.state.c3} onChange={this.onFilter} />
+                <label for="c3">100 000 - 300 000</label>
+                <input type="checkbox" id="c4" checked={this.state.c4} onChange={this.onFilter} />
+                <label for="c4">300 000 - 1m </label>
+                <input type="checkbox" id="c5" checked={this.state.c5} onChange={this.onFilter} />
+                <label for="c5">1m - 3m</label>
+                <input type="checkbox" id="c6" checked={this.state.c6} onChange={this.onFilter} />
+                <label for="c6">Above 3m</label>
+                </nav>
       </div>
     )
   }
