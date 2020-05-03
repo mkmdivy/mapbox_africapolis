@@ -330,6 +330,7 @@ var hoveredID=null;
 
 }
 componentDidUpdate(prevProps, prevState) {
+    console.log(this.map.queryRenderedFeatures({layers:['agglomerations']}));
     //if( prevState.selectedOption !== this.state.selectedOption || prevState.update[0] !== this.state.update[0]) {
 
     if( prevState !== this.state) {
@@ -358,7 +359,7 @@ componentDidUpdate(prevProps, prevState) {
         this.add_point('agglomerations',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)],[">","Population_"+this.state.update[0],0],this.state.update[0]);
       }
 
-      this.map.on('render', afterChangeComplete); // warning: this fires many times per second!
+      // this.map.on('render', afterChangeComplete); // warning: this fires many times per second!
 
       // function afterChangeComplete () {
       //   if (!this.map.loaded()) { return } // still not loaded; bail out.
