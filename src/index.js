@@ -152,9 +152,9 @@ componentDidMount() {
         console.log(e.target)
         var handler = e.target.id;
         if (e.target.checked) {
-          console.log("a")
+
         } else {
-          console.log("b")
+
         }
         });
 //// Import Africapolis agglomerations from mapbox
@@ -262,7 +262,7 @@ componentDidMount() {
         this.map.on('click', 'agglomerations', e =>  {
               //if(e.features[0].layer.paint["text-opacity"] === 1)
             //  {
-                console.log(e.features[0].properties)
+
                     this.setState({ selectedOption: {value: e.features[0].properties.Country_ID, label:e.features[0].properties.Agglomeration_Name , agglomeration: "Yes"  } })
               //}
                   });
@@ -331,8 +331,8 @@ var hoveredID=null;
 }
 componentDidUpdate(prevProps, prevState) {
     //if( prevState.selectedOption !== this.state.selectedOption || prevState.update[0] !== this.state.update[0]) {
-    if( prevState !== this.state) {
 
+    if( prevState !== this.state) {
       //console.log(this.state.selectedOption, prevState.selectedOption);
       this.remove('country');
       this.remove('agglomerations');
@@ -345,6 +345,7 @@ componentDidUpdate(prevProps, prevState) {
       {
         this.add_shape('country',["==","Region_ID",this.state.selectedOption.value]);
         this.add_point('agglomerations',["==","Region_ID",this.state.selectedOption.value],[">","Population_"+this.state.update[0],0],this.state.update[0]);
+
       }
       else if (this.state.selectedOption.agglomeration)
       {
@@ -356,10 +357,22 @@ componentDidUpdate(prevProps, prevState) {
         this.add_shape('country',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)]);
         this.add_point('agglomerations',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)],[">","Population_"+this.state.update[0],0],this.state.update[0]);
       }
+
+      this.map.on('render', afterChangeComplete); // warning: this fires many times per second!
+
+      // function afterChangeComplete () {
+      //   if (!this.map.loaded()) { return } // still not loaded; bail out.
+      //
+      //   // now that the map is loaded, it's safe to query the features:
+      //   console.log(this.map.queryRenderedFeatures({layers:['agglomerations']}));
+      //
+      //   this.map.off('render', afterChangeComplete); // remove this handler now that we're done.
+      // }
       this.map.moveLayer('country_labels')
       this.map.moveLayer('region_labels')
-  }
 
+
+  }
     // if(prevState.update !== this.state.update)
     // {console.log(this.state.update[0])}
 }
