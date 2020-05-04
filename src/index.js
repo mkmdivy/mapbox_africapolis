@@ -330,7 +330,7 @@ var hoveredID=null;
 
 }
 componentDidUpdate(prevProps, prevState) {
-    console.log(this.map.queryRenderedFeatures({layers:['agglomerations']}));
+
     //if( prevState.selectedOption !== this.state.selectedOption || prevState.update[0] !== this.state.update[0]) {
 
     if( prevState !== this.state) {
@@ -359,16 +359,21 @@ componentDidUpdate(prevProps, prevState) {
         this.add_point('agglomerations',["==","ISO3",IDtoISO3_f(this.state.selectedOption.value)],[">","Population_"+this.state.update[0],0],this.state.update[0]);
       }
 
-      // this.map.on('render', afterChangeComplete); // warning: this fires many times per second!
+      const afterChangeComplete = () => {
+          if (!this.map.loaded()) return;
+          var collection = [];
+          this.map.queryRenderedFeatures({layers:['agglomerations']}).forEach(item => collection.push(item.properties["Population_"+this.state.update[0]]));
+          this.map.off('render', afterChangeComplete);
+          console.log(collection.filter((o)=> {return o >= 10000 && o < 30000;}).length);
+          console.log(collection.filter((o)=> {return o >= 30000 && o < 100000;}).length);
+          console.log(collection.filter((o)=> {return o >= 100000 && o < 300000;}).length);
+          console.log(collection.filter((o)=> {return o >= 300000 && o < 1000000;}).length);
+          console.log(collection.filter((o)=> {return o >= 1000000 && o < 3000000;}).length);
+          console.log(collection.filter((o)=> {return o >= 3000000;}).length);
+          }
+          this.map.on('render', afterChangeComplete);
 
-      // function afterChangeComplete () {
-      //   if (!this.map.loaded()) { return } // still not loaded; bail out.
-      //
-      //   // now that the map is loaded, it's safe to query the features:
-      //   console.log(this.map.queryRenderedFeatures({layers:['agglomerations']}));
-      //
-      //   this.map.off('render', afterChangeComplete); // remove this handler now that we're done.
-      // }
+
       this.map.moveLayer('country_labels')
       this.map.moveLayer('region_labels')
 
