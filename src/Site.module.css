@@ -1,0 +1,301 @@
+.mapContainer {
+  display:flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.topleft{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px;
+  background-color: rgba(43,43,43,.95);
+  color: #ffffff;
+  z-index: 1 !important;
+  padding: 6px;
+  width:330px;
+}
+
+.topleft span{
+font: 400 19px Arial;
+}
+
+.topleft headtitle{
+  font: 400 30px Arial;
+  color: #e8ae40;
+  font-weight: bold;
+}
+
+
+
+.legend{
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 12px;
+  background-color: rgba(43,43,43,.95);
+  color: #ffffff;
+  z-index: 1 !important;
+  padding: 6px;
+  font:400 15.3333px Arial;
+  width:150px;
+}
+
+.legend h4 {
+font:400 19px Arial;
+margin: 0 0 10px;
+}
+
+.legend div span {
+display: inline-block;
+height: 10px;
+margin-right: 5px;
+width: 10px;
+font:400 10px Arial;
+}
+
+.legend small {
+font: 400 12px Arial;
+}
+
+.table{
+text-align: left;
+margin-top: 10px;
+width: 100%;
+font: 400 15.3333px Arial;
+}
+
+.table th{
+font: 600 16.3333px Arial;
+}
+
+.table td{
+
+}
+
+.tooltip {
+font: 600 16.3333px Arial;
+background-color: rgb(43,43,43,.7);
+padding: 10px;
+line-height: 1.7em;
+}
+
+.regionsel {
+color: #e8ae40;
+  }
+
+
+.popup {
+  font: 600 16.3333px Arial;
+  background-color: rgba(43,43,43,.95);
+  padding: 10px;
+  line-height: 1.7em;
+
+}
+
+.logo {
+position:absolute;
+z-index: 3;
+bottom: 0;
+left:100px;
+width:170px;
+}
+
+ .button {
+  font: 600 16px Arial;
+  color: white;
+  border: none;
+  width:50%;
+  padding: 10px 16px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: .7px;
+  cursor: pointer;
+  transition: all .19s linear;
+  background-color:rgba(205,205,205,.30);
+  outline: none;
+  margin-bottom: 10px;
+ }
+
+ .button:hover {
+     color: #ffffff;
+     font-weight:600;
+     background-color:rgba(205,205,205,.95);
+     transition: all .19s linear;
+ }
+
+ .buttonActive {
+   font: 600 16px Arial;
+   color: white;
+   border: none;
+   width:50%;
+   padding: 10px 16px;
+   text-align: center;
+   display: inline-block;
+   letter-spacing: .7px;
+   cursor: pointer;
+   transition: all .19s linear;
+   background-color: #e8ae40;
+   outline: none;
+   margin-bottom: 10px;
+ }
+
+ .buttonActive:hover {
+     color: #ffffff;
+     font-weight:600;
+     background-color:rgba(205,205,205,.95);
+     transition: all .19s linear;
+ }
+
+
+
+.headwrapper {
+  display:flex;
+  flex-flow: column;
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width: 850px) {
+      .topleft{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 12px;
+        background-color: rgba(43,43,43,.95);
+        color: #ffffff;
+        z-index: 1 !important;
+        padding: 6px;
+        width:130px;
+        font: 400 6.6px Arial;
+      }
+
+      .topleft span{
+      font: 400 9.6px Arial;
+      }
+
+      .topleft headtitle{
+        font: 400 16px Arial;
+        color: #e8ae40;
+        font-weight: bold;
+      }
+
+      .table{
+      text-align: left;
+      margin-top: 10px;
+      width: 100%;
+      font: 400 8.3333px Arial;
+      }
+
+      .table th{
+      font: 600 9.3333px Arial;
+      }
+
+      .table td{
+
+      }
+
+      .tooltip {
+      font: 600 9.3333px Arial;
+      background-color: rgb(43,43,43,.7);
+      padding: 10px;
+      line-height: 1.7em;
+      }
+
+      .legend{
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 12px;
+        background-color: rgba(43,43,43,.95);
+        color: #ffffff;
+        z-index: 1 !important;
+        padding: 6px;
+        font:400 10px Arial;
+        width:110px;
+      }
+
+      .legend h4 {
+      font:400 10px Arial;
+      margin: 0 0 10px;
+      }
+
+      .legend div span {
+      display: inline-block;
+      height: 10px;
+      margin-right: 5px;
+      width: 10px;
+      font:400 10px Arial;
+      }
+
+      .legend small {
+      font: 400 7px Arial;
+      }
+
+      .logo {
+      visibility: hidden
+      }
+
+      .button {
+       font: 600 9px Arial;
+       color: white;
+       border: none;
+       width:50%;
+       padding: 0px 0px;
+       text-align: center;
+       display: inline-block;
+       letter-spacing: .7px;
+       cursor: pointer;
+       transition: all .19s linear;
+       background-color:rgba(205,205,205,.30);
+       outline: none;
+       margin-bottom: 5px;
+      }
+
+      .button:hover {
+          color: #ffffff;
+          font-weight:600;
+          background-color:rgba(205,205,205,.95);
+          transition: all .19s linear;
+      }
+
+      .buttonActive {
+        font: 600 9px Arial;
+        color: white;
+        border: none;
+        width:50%;
+        padding: 0px 0px;
+        text-align: center;
+        display: inline-block;
+        letter-spacing: .7px;
+        cursor: pointer;
+        transition: all .19s linear;
+        background-color: #e8ae40;
+        outline: none;
+        margin-bottom: 5px;
+      }
+
+      .buttonActive:hover {
+          color: #ffffff;
+          font-weight:600;
+          background-color:rgba(205,205,205,.95);
+          transition: all .19s linear;
+      }
+
+
+@media screen and (max-height: 600px) {
+
+  .legend{
+    bottom: 0;
+    left: 0;
+  }
+}
+}
